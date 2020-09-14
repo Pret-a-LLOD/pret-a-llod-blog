@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [ ghpages ]
+  pull_request:
+    branches: [ ghpages ]
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+            ref: ghpages
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.6'
+          architecture: x64
+      - run: |
+          cd blog_generator
+          python -m pip install -r requirements.txt
+          cd ..
+          python blog_generator/manage.py
+      - name: Commit report
+        run: |
+          git config --global user.name 'berstearns'
+          git config --global user.email 'bernardo.stearns@gmail.com'
+          git add .
+          git commit -am "Automated report"
+          git push
