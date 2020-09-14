@@ -83,7 +83,7 @@ class Builder:
             page_fullpath = join(self.folders['pages'], page_relativepath)
             destination_filepath = join(self.folders['destination'],f'{page_filename}.html')
             with open(destination_filepath,"w") as outf:
-                outf.write("<div> new page</div>")
+                outf.write("<div> new :( page</div>")
             #self.templates["pages"][filename].render(self.va)
 
     def find_template(self,filename,type_):
