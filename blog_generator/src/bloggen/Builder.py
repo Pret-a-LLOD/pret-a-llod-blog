@@ -82,6 +82,7 @@ class Builder:
             page_filename, extension = os.path.splitext(page_relativepath)
             page_fullpath = join(self.folders['pages'], page_relativepath)
             destination_filepath = join(self.folders['destination'],f'{page_filename}.html')
+            logging.debug(destination_filepath)
             with open(destination_filepath,"w") as outf:
                 outf.write("<div> new :( page</div>")
             #self.templates["pages"][filename].render(self.va)
