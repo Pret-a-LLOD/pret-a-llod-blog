@@ -36,8 +36,7 @@ class Builder:
 
         self.templates_filepath= [join(self.folders['templates'],f)
                 for f in os.listdir(self.folders['templates'])]
-        self.post_template_filepath = self.find_template(filename="post",type_="post")  
-        self.post_template = jinja2.Template(open(self.post_template_filepath).read())
+        self.post_template = self.find_template(filename="post",type_="post")  
         
     def build_blog(self):
         for folder in self.expected_folders:
@@ -48,8 +47,10 @@ class Builder:
 
     def build_scope_n_templates(self):
         scope = {}
-
         templates = {"post":self.post_template}
+        
+
+
         conf_spec = importlib.util.spec_from_file_location("conf", self.files['global_conf'])
         conf_module =  importlib.util.module_from_spec(conf_spec)
         conf_spec.loader.exec_module(conf_module)
@@ -63,17 +64,29 @@ class Builder:
             page_filename, extension = os.path.splitext(page_relativepath)
             page_fullpath = join(self.folders['pages'], page_relativepath)
             page_template = self.find_template(page_filename, type_="page")
-            print(extension)
             variables, content = self.read_page_info(page_fullpath,
                                                     type_="page",
                                                     extension_=extension) 
+            context  = scope["global"].copy()
+            context.update(variables)
+            content = markdown2.markdown(jinja2.Template("".join(content)).render(context))
+            variables.update({"content":content})
+
+            templates[page_filename] = page_template
             scope["pages"][page_filename] = variables
-            logging.debug(page_template)
 
         scope["posts"] = {}
         for post_relativepath in os.listdir(self.folders['posts']):
-            filename, extension = os.path.splitext(post_relativepath)
-            logging.debug(post_relativepath)
+            post_filename, extension = os.path.splitext(post_relativepath)
+            post_fullpath = join(self.folders['posts'], post_relativepath)
+            variables, content = self.read_page_info(post_fullpath,
+                                                    type_="post",
+                                                    extension_=extension) 
+            context  = scope["global"].copy()
+            context.update(variables)
+            content = markdown2.markdown(jinja2.Template("".join(content)).render(context))
+            variables.update({"content":content})
+            scope["posts"][page_filename] = variables
 
         return scope, templates
 
@@ -83,16 +96,17 @@ class Builder:
             page_fullpath = join(self.folders['pages'], page_relativepath)
             destination_filepath = join(self.folders['destination'],f'{page_filename}.html')
             logging.debug(destination_filepath)
+            context = self.scope["global"].copy()
+            context.update(self.scope["pages"][page_filename])
             with open(destination_filepath,"w") as outf:
-                outf.write("<div> new :( page</div>")
-            #self.templates["pages"][filename].render(self.va)
+                outf.write( self.templates[page_filename].render(context) )
 
     def find_template(self,filename,type_):
         found = False
         matched_templates = [fp for fp in self.templates_filepath if filename in fp]
         if matched_templates:
             template_filepath = matched_templates[0] 
-            return template_filepath 
+            return jinja2.Template(open(template_filepath).read()) 
         else:
             print(filename)
             print(self.templates_filepath)
@@ -106,9 +120,9 @@ class Builder:
                 next_line = inpf.__next__()
                 while next_line:
                     variable_name, value = next_line.split(":")
-                    variables[variable_name] = value
+                    variables[variable_name.lower()] = value.strip()
                     next_line = inpf.__next__()
             except:
                 for content in inpf:
-                    contents.append(content)
+                    contents.append(content.strip())
         return variables, contents                
