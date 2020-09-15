@@ -124,5 +124,5 @@ class Builder:
                     next_line = inpf.__next__()
             except:
                 for content in inpf:
-                    contents.append(content.strip())
+                    contents.append(content)
         return variables, contents                
