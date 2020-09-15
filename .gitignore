@@ -2,7 +2,3 @@ pythonenv/
 blog_generator/pretallod
 **/.DS_Store
 blog_generator/inputs/__pycache__/
-index.html
-pages/
-posts/
-static/
