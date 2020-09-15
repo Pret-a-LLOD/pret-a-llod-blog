@@ -5,6 +5,19 @@
     {% set BASE_FOLDER = "." %}
 {% endif %}
 <head>
+    <style>
+        .footer {
+            height: 50px;
+            background-color: red;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-bottom: 0px;
+        }
+        body {
+            margin-bottom:50px;
+        }
+    </style>
     <link rel="stylesheet" href="{{BASE_FOLDER}}/static/bootstrap.min.css" integrity="">
 </head>
 <body>
@@ -29,5 +42,9 @@
 </nav>
 
 {{content}}
+
+<footer class="footer bg-dark">
+  <p>Footer</p>
+</footer>
 </body>
 </html>
