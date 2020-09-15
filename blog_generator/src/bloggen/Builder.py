@@ -6,6 +6,7 @@ import logging
 import importlib
 import importlib.util
 import sys
+from shutil import copyfile
 FORMAT = '%(asctime)-15s %(message)s'
 logging.basicConfig(level=logging.DEBUG,format=FORMAT)
 class Builder:
@@ -42,6 +43,8 @@ class Builder:
         for folder in self.expected_folders:
             if not os.path.exists(folder):
                 os.mkdir(folder)
+        for file_ in os.listdir(self.folders["static"]):
+            copyfile(join(self.folders["static"],file_),join(self.expected_folders["static"],file_)) 
         self.scope, self.templates = self.build_scope_n_templates()
         self.rendered_templates = self.render_templates()
 
