@@ -28,19 +28,19 @@ class Builder:
                 'global_conf':join(self.folders["base"],"conf.py"),
         }
 
-        self.expected_folders = [
-                destination_folder,
-                join(destination_folder,"static"),
-                join(destination_folder,"pages"),
-                join(destination_folder,"posts"),
-                ]
+        self.expected_folders = {
+                "destination":destination,
+                "static":join(destination,"static"),
+                "pages":join(destination,"pages"),
+                "posts":join(destination,"posts"),
+                }
 
         self.templates_filepath= [join(self.folders['templates'],f)
                 for f in os.listdir(self.folders['templates'])]
         self.post_template = self.find_template(filename="post",type_="post")  
         
     def build_blog(self):
-        for folder in self.expected_folders:
+        for folder in self.expected_folders.values():
             if not os.path.exists(folder):
                 os.mkdir(folder)
         for file_ in os.listdir(self.folders["static"]):
