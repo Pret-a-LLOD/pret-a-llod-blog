@@ -61,7 +61,10 @@ class Builder:
         d = conf_module.__dict__
         scope["global"] = {key: d[key] for key in d 
                                 if "__" not in key}
-
+        scope["global"]["pages_list"] = [os.path.splitext(page_relativepath)[0] 
+                for page_relativepath in  os.listdir(self.folders['pages'])]
+        scope["global"]["posts_list"] = [os.path.splitext(post_relativepath)[0] 
+                for post_relativepath in  os.listdir(self.folders['posts'])]
         scope["pages"] = {}
         for page_relativepath in os.listdir(self.folders['pages']):
             page_filename, extension = os.path.splitext(page_relativepath)
@@ -97,10 +100,14 @@ class Builder:
         for page_relativepath in os.listdir(self.folders['pages']):
             page_filename, extension = os.path.splitext(page_relativepath)
             page_fullpath = join(self.folders['pages'], page_relativepath)
-            destination_filepath = join(self.folders['destination'],f'{page_filename}.html')
+            if page_filename == "index":
+                destination_filepath = join(self.expected_folders['destination'],f'{page_filename}.html')
+            else:
+                destination_filepath = join(self.expected_folders['pages'],f'{page_filename}.html')
             logging.debug(destination_filepath)
             context = self.scope["global"].copy()
             context.update(self.scope["pages"][page_filename])
+            context.update({"template_name":page_filename})
             with open(destination_filepath,"w") as outf:
                 outf.write( self.templates[page_filename].render(context) )
 
@@ -111,8 +118,6 @@ class Builder:
             template_filepath = matched_templates[0] 
             return jinja2.Template(open(template_filepath).read()) 
         else:
-            print(filename)
-            print(self.templates_filepath)
             raise Exception("Could not find template")
 
     def read_page_info(self, page_fullpath, type_, extension_):
