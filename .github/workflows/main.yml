@@ -20,7 +20,7 @@ jobs:
           architecture: x64
       - run: |
           cd blog_generator
-          python -m pip install -r requirements.txt
+          python -m pip install -r requirements.txt -U
           cd ..
           python blog_generator/manage.py
       - name: Commit report
