@@ -38,8 +38,12 @@ class Builder:
 
         self.templates_filepath= [join(self.folders['templates'],f)
                 for f in os.listdir(self.folders['templates'])]
-        self.templates = {os.path.splitext(f)[0]:self.jinja_env.from_string(open(join(self.folders['templates'],f)).read()) 
-                        for f in os.listdir(self.folders['templates'])}
+        for f in os.listdir(self.folders['templates']):
+            template = open(join(self.folders['templates'],f)).read()
+            print("*"*100)
+            print(template)
+            self.templates[os.path.splitext(f)[0]] = self.jinja_env.from_string(template) 
+            print("*"*100)
         self.post_template = self.find_template(filename="post",type_="post")  
         
     def build_blog(self):
@@ -110,11 +114,11 @@ class Builder:
             context.update({"template_name":page_filename})
             context.update({"templates":self.templates})
             with open(destination_filepath,"w") as outf:
-                print("*"*100)
-                print(self.templates[page_filename].render(context)) 
+                #print("*"*100)
+                #print(self.templates[page_filename].render(context)) 
                 outf.write( self.templates[page_filename].render(context) )
-                print("*"*100)
-                print("\n"*5)
+                #print("*"*100)
+                #print("\n"*5)
 
         for post_relativepath in os.listdir(self.folders['posts']):
             post_filename, extension = os.path.splitext(post_relativepath)
