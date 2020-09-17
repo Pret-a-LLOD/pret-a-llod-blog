@@ -24,6 +24,7 @@ class Builder:
                 "pages":  join(base,"content","pages")
         }
 
+        self.jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(self.folders['templates']))
         self.files = {
                 'global_conf':join(self.folders["base"],"conf.py"),
         }
@@ -37,6 +38,8 @@ class Builder:
 
         self.templates_filepath= [join(self.folders['templates'],f)
                 for f in os.listdir(self.folders['templates'])]
+        self.templates = {os.path.splitext(f)[0]:self.jinja_env.from_string(open(join(self.folders['templates'],f)).read()) 
+                        for f in os.listdir(self.folders['templates'])}
         self.post_template = self.find_template(filename="post",type_="post")  
         
     def build_blog(self):
@@ -51,8 +54,6 @@ class Builder:
     def build_scope_n_templates(self):
         scope = {}
         templates = {"post":self.post_template}
-        
-
 
         conf_spec = importlib.util.spec_from_file_location("conf", self.files['global_conf'])
         conf_module =  importlib.util.module_from_spec(conf_spec)
@@ -61,10 +62,6 @@ class Builder:
         d = conf_module.__dict__
         scope["global"] = {key: d[key] for key in d 
                                 if "__" not in key}
-        scope["global"]["pages_list"] = [os.path.splitext(page_relativepath)[0] 
-                for page_relativepath in  os.listdir(self.folders['pages'])]
-        scope["global"]["posts_list"] = [os.path.splitext(post_relativepath)[0] 
-                for post_relativepath in  os.listdir(self.folders['posts'])]
         scope["pages"] = {}
         for page_relativepath in os.listdir(self.folders['pages']):
             page_filename, extension = os.path.splitext(page_relativepath)
@@ -75,11 +72,12 @@ class Builder:
                                                     extension_=extension) 
             context  = scope["global"].copy()
             context.update(variables)
-            content = markdown2.markdown(jinja2.Template("".join(content)).render(context))
+            content = markdown2.markdown(self.jinja_env.from_string("".join(content)).render(context))
             variables.update({"content":content})
 
             templates[page_filename] = page_template
             scope["pages"][page_filename] = variables
+
 
         scope["posts"] = {}
         for post_relativepath in os.listdir(self.folders['posts']):
@@ -90,9 +88,9 @@ class Builder:
                                                     extension_=extension) 
             context  = scope["global"].copy()
             context.update(variables)
-            content = markdown2.markdown(jinja2.Template("".join(content)).render(context))
+            content = markdown2.markdown(self.jinja_env.from_string("".join(content)).render(context))
             variables.update({"content":content})
-            scope["posts"][page_filename] = variables
+            scope["posts"][post_filename] = variables
 
         return scope, templates
 
@@ -107,16 +105,38 @@ class Builder:
             logging.debug(destination_filepath)
             context = self.scope["global"].copy()
             context.update(self.scope["pages"][page_filename])
+            context.update({"pages":self.scope["pages"]})
+            context.update({"posts":self.scope["posts"]})
             context.update({"template_name":page_filename})
+            context.update({"templates":self.templates})
+            print(context)
             with open(destination_filepath,"w") as outf:
                 outf.write( self.templates[page_filename].render(context) )
+
+        for post_relativepath in os.listdir(self.folders['posts']):
+            post_filename, extension = os.path.splitext(post_relativepath)
+            post_fullpath = join(self.folders['posts'], post_relativepath)
+            if post_filename == "index":
+                destination_filepath = join(self.expected_folders['destination'],f'{post_filename}.html')
+            else:
+                destination_filepath = join(self.expected_folders['posts'],f'{post_filename}.html')
+            logging.debug(destination_filepath)
+            context = self.scope["global"].copy()
+            context.update(self.scope["posts"][post_filename])
+            context.update({"pages":self.scope["pages"]})
+            context.update({"posts":self.scope["posts"]})
+            context.update({"template_name":post_filename})
+            context.update({"templates":self.templates})
+            with open(destination_filepath,"w") as outf:
+                outf.write( self.templates["post"].render(context) )
 
     def find_template(self,filename,type_):
         found = False
         matched_templates = [fp for fp in self.templates_filepath if filename in fp]
         if matched_templates:
             template_filepath = matched_templates[0] 
-            return jinja2.Template(open(template_filepath).read()) 
+            return self.jinja_env.from_string(open(template_filepath).read())
+ 
         else:
             raise Exception("Could not find template")
 

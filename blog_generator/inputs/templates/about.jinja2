@@ -6,46 +6,19 @@
 {% endif %}
 <head>
     <style>
-        .footer {
-            height: 50px;
-            background-color: red;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            margin-bottom: 0px;
-        }
-        body {
-            margin-bottom:50px;
+        * {
+            text-shadow: black -0.3px 0.5px;
         }
     </style>
     <link rel="stylesheet" href="{{BASE_FOLDER}}/static/bootstrap.min.css" integrity="">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">
-    <img src="{{BASE_FOLDER}}/static/img.jpg" alt="logo" style="height:50px">
-  </a>
-  
-  <!-- Links -->
-  <ul class="navbar-nav">
-    {% for page in pages_list %}        
-      <li class="nav-item">
-          {% if page != "index" %}
-              <a class="nav-link" href="{{BASE_FOLDER}}/pages/{{ page }}.html">{{page}}</a>
-          {% else %}
-              <a class="nav-link" href="{{BASE_FOLDER}}/{{ page }}.html">{{page}}</a>
-          {% endif %}
-        </li>
-    {% endfor %}
-  </ul>
-</nav>
+{% include 'navbar.jinja2' %}
 
+<div class="jumbotron">
 {{content}}
+</div>
 
-<footer class="footer bg-dark">
-  <p>Footer</p>
-</footer>
-
+{% include 'footer.jinja2' %}
 </body>
 </html>

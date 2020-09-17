@@ -1,3 +1,4 @@
+title: about
 slug: about
 
 # About the pret-a-lod-project
