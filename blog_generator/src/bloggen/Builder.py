@@ -41,10 +41,10 @@ class Builder:
         self.templates = {}
         for f in os.listdir(self.folders['templates']):
             template = open(join(self.folders['templates'],f)).read()
-            print("*"*100)
-            print(template)
+            #print("*"*100)
+            #print(template)
             self.templates[os.path.splitext(f)[0]] = self.jinja_env.from_string(template) 
-            print("*"*100)
+            #print("*"*100)
         self.post_template = self.find_template(filename="post",type_="post")  
         
     def build_blog(self):
@@ -117,6 +117,8 @@ class Builder:
             with open(destination_filepath,"w") as outf:
                 #print("*"*100)
                 #print(self.templates[page_filename].render(context)) 
+                print("\n"*10)
+                print(context)
                 outf.write( self.templates[page_filename].render(context) )
                 #print("*"*100)
                 #print("\n"*5)
