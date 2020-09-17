@@ -38,6 +38,7 @@ class Builder:
 
         self.templates_filepath= [join(self.folders['templates'],f)
                 for f in os.listdir(self.folders['templates'])]
+        self.templates = {}
         for f in os.listdir(self.folders['templates']):
             template = open(join(self.folders['templates'],f)).read()
             print("*"*100)
