@@ -109,9 +109,12 @@ class Builder:
             context.update({"posts":self.scope["posts"]})
             context.update({"template_name":page_filename})
             context.update({"templates":self.templates})
-            print(context)
             with open(destination_filepath,"w") as outf:
+                print("*"*100)
+                print(self.templates[page_filename].render(context)) 
                 outf.write( self.templates[page_filename].render(context) )
+                print("*"*100)
+                print("\n"*5)
 
         for post_relativepath in os.listdir(self.folders['posts']):
             post_filename, extension = os.path.splitext(post_relativepath)
