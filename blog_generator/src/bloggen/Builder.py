@@ -103,6 +103,7 @@ class Builder:
         print(os.listdir(self.folders['pages']))
         for page_relativepath in os.listdir(self.folders['pages']):
             page_filename, extension = os.path.splitext(page_relativepath)
+            print(self.templates[page_filename])
             page_fullpath = join(self.folders['pages'], page_relativepath)
             if page_filename == "index":
                 destination_filepath = join(self.expected_folders['destination'],f'{page_filename}.html')
