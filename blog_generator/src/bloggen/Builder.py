@@ -100,6 +100,7 @@ class Builder:
         return scope, templates
 
     def render_templates(self):
+        print(os.listdir(self.folders['pages']))
         for page_relativepath in os.listdir(self.folders['pages']):
             page_filename, extension = os.path.splitext(page_relativepath)
             page_fullpath = join(self.folders['pages'], page_relativepath)
