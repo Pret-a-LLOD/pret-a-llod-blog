@@ -19,6 +19,7 @@ jobs:
           python-version: '3.6'
           architecture: x64
       - run: |
+          rm -rf posts pages static index.html
           cd blog_generator
           python -m pip install -r requirements.txt -U
           cd ..
