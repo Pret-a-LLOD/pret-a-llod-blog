@@ -103,7 +103,6 @@ class Builder:
         print(os.listdir(self.folders['pages']))
         for page_relativepath in os.listdir(self.folders['pages']):
             page_filename, extension = os.path.splitext(page_relativepath)
-            print(self.templates[page_filename])
             page_fullpath = join(self.folders['pages'], page_relativepath)
             if page_filename == "index":
                 destination_filepath = join(self.expected_folders['destination'],f'{page_filename}.html')
@@ -155,14 +154,23 @@ class Builder:
     def read_page_info(self, page_fullpath, type_, extension_):
         variables = {}
         contents = []
+        print("*"*100)
+        print(open(page_fullpath).read())
         with open(page_fullpath) as inpf:
             try: 
-                next_line = inpf.__next__()
+                next_line = inpf.__next__().strip()
                 while next_line:
-                    variable_name, value = next_line.split(":")
+                    print(next_line)
+                    variable_name, *value = next_line.split(":")
+                    value = ":".join(value).strip()
                     variables[variable_name.lower()] = value.strip()
-                    next_line = inpf.__next__()
+                    next_line = inpf.__next__().strip()
             except:
+                print("*"*100)
+                for content in inpf:
+                    contents.append(content)
+            else:
+                print("*"*100)
                 for content in inpf:
                     contents.append(content)
         return variables, contents                

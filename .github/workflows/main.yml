@@ -29,4 +29,4 @@ jobs:
           git config --global user.email 'bernardo.stearns@gmail.com'
           git add .
           git commit -am "Automated blog generation"
-          git push
+          git push -f
