@@ -29,5 +29,5 @@ jobs:
           git config --global user.name 'berstearns'
           git config --global user.email 'bernardo.stearns@gmail.com'
           git add .
-          git commit -am "Automated blog generation"
+          git commit -am "[GITHUB ACTIONS] Automated blog generation"
           git push -f
