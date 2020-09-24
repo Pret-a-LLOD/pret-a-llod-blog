@@ -44,9 +44,9 @@
 </head>
 <body>
 {% include 'navbar.jinja2' %}
-<div class="jumbotron">
+<div class="container">
     <div class="row">
-        <div class="col-md-12 col-lg-12">
+            <div class="col-9">
             <ul class="all-blogs">
                 {% for post_filename, post_dict in posts.items() %}
                 <li class="media">
@@ -60,6 +60,9 @@
                 </li>
                 {% endfor %}
             </ul>
+        </div>
+        <div class="col-3">
+            <a class="twitter-timeline" data-width="420" data-height="500" href="https://twitter.com/pret_a_llod?ref_src=twsrc%5Etfw">Tweets by pret_a_llod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
 </div>
