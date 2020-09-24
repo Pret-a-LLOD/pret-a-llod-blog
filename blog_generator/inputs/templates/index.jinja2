@@ -7,6 +7,12 @@
 <head>
     <style></style>
         <style>
+        .content {
+            height: fit-content;
+        }
+        .container {
+            margin-top: 10px;
+        }
         * {
             text-shadow: black -0.3px 0.5px;
         }
@@ -16,8 +22,15 @@
 <body>
 {% include 'navbar.jinja2' %}
 
-<div class="jumbotron">
-{{content}}
+<div class="container">
+   <div class="row">
+    <div class="content jumbotron col-9">
+    {{content}}
+    </div>
+    <div class="col-3">
+        <a class="twitter-timeline" data-width="420" data-height="500" href="https://twitter.com/pret_a_llod?ref_src=twsrc%5Etfw">Tweets by pret_a_llod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+   </div>
 </div>
 
 {% include 'footer.jinja2' %}
