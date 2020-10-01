@@ -14,13 +14,24 @@
             margin-top: 10px;
         }
         * {
-            text-shadow: black -0.3px 0.5px;
+            font-family: 'Roboto', sans-serif;
         }
     </style>
     <link rel="stylesheet" href="{{BASE_FOLDER}}/static/bootstrap.min.css" integrity="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" 
+      type="image/png" 
+      href="{{BASE_FOLDER}}/static/cropped-logo-cut-final-32x32.png">
+    <title>Pr&ecirc;t-&agrave;-LLOD</title>
+
 </head>
 <body>
 {% include 'navbar.jinja2' %}
+
+{% if slug == "index" %}
+<div class="jumbotron" style="background-image:url('{{BASE_FOLDER}}/static/website-new-banner.jpg');background-size:cover;height:645px;">
+</div>
+{% endif %}
 
 <div class="container">
    <div class="row">

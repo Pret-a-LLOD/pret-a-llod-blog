@@ -1,14 +1,15 @@
-title: about
+title: About
 slug: about
 
-# About the pret-a-lod-project
+# About the Pr&ecric;t-&agrave;-LLOD Project
 Language technologies increasingly rely on large amounts of data and
 better access and usage of language resources will enable to provide
 multilingual solutions that would support the emerging Digital Single
 Market in Europe. However, data is rarely ‘ready-to-use’ and language
 technology specialists spend over 80% of their time on cleaning,
 organizing and collecting datasets. Reducing this effort promises huge
-cost savings for all sectors where language technologies are required.\
+cost savings for all sectors where language technologies are required.
+
 An essential part of the Extract-Transform-Load process involves linking
 datasets to existing schemas, yet few specialists take advantage of
 linked data technologies to perform this task.
@@ -25,17 +26,21 @@ technologies, in particular the usage of Linguistic Linked Open Data
 
 The project will develop novel tools for the transformation and linking
 of datasets, and apply these to both data and metadata in order to
-provide multi-portal access to heterogeneous data repositories.\
+provide multi-portal access to heterogeneous data repositories.
+
 We will study how we can automatically analyze licenses in order to
 deduce how data may be lawfully used and sold by language resource
 providers. Finally, we will provide tools to combine language services
-and resources into complex pipelines by use of semantic technologies.\
+and resources into complex pipelines by use of semantic technologies.
+
 This will lead to sustainable data offers and services that can be
 deployed to many platforms, including as-yet-unknown platforms, and can
-be self-described with linked data semantics.\
+be self-described with linked data semantics.
+
 This toolkit will be validated in four pilots, where novel data value
 chains will be built for pharmaceutical applications, technology
-providers, and government services.\
+providers, and government services.
+
 This toolkit will increase the uptake of language technologies by
 removing barriers to its use and provide cost savings that benefit both
 public and private sector users such as SMEs.
