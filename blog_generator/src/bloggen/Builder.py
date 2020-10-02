@@ -97,49 +97,55 @@ class Builder:
             variables.update({"content":content})
             scope["posts"][post_filename] = variables
 
+        scope["ordered_posts"] = sorted([self.set_context(post_relativepath, scope, page_type="post",)
+                                for post_relativepath in  os.listdir(self.folders['posts'])]
+                              , key     = lambda dict_: dict_["date"]
+                              , reverse = True
+                             ) 
         return scope, templates
 
     def render_templates(self):
         print(os.listdir(self.folders['pages']))
         for page_relativepath in os.listdir(self.folders['pages']):
-            page_filename, extension = os.path.splitext(page_relativepath)
-            page_fullpath = join(self.folders['pages'], page_relativepath)
-            if page_filename == "index":
-                destination_filepath = join(self.expected_folders['destination'],f'{page_filename}.html')
-            else:
-                destination_filepath = join(self.expected_folders['pages'],f'{page_filename}.html')
-            logging.debug(destination_filepath)
-            context = self.scope["global"].copy()
-            context.update(self.scope["pages"][page_filename])
-            context.update({"pages":self.scope["pages"]})
-            context.update({"posts":self.scope["posts"]})
-            context.update({"template_name":page_filename})
-            context.update({"templates":self.templates})
-            with open(destination_filepath,"w") as outf:
-                #print("*"*100)
-                #print(self.templates[page_filename].render(context)) 
-                print("\n"*10)
-                print(context)
-                outf.write( self.templates[page_filename].render(context) )
-                #print("*"*100)
-                #print("\n"*5)
+            page_context = self.set_context(page_relativepath, self.scope, page_type="page")
+            p_ctx = page_context
+            p_ctx['posts_list'] = self.scope["ordered_posts"]
+            with open(p_ctx['destination_fullpath'],"w") as outf:
+                outf.write( p_ctx["template"].render(p_ctx) )
 
-        for post_relativepath in os.listdir(self.folders['posts']):
-            post_filename, extension = os.path.splitext(post_relativepath)
-            post_fullpath = join(self.folders['posts'], post_relativepath)
-            if post_filename == "index":
-                destination_filepath = join(self.expected_folders['destination'],f'{post_filename}.html')
+        for post_context in self.scope["ordered_posts"]:
+            p_ctx = post_context
+            p_ctx['posts_list'] = self.scope["ordered_posts"]
+            with open(p_ctx['destination_fullpath'],"w") as outf:
+                outf.write( p_ctx['template'].render(p_ctx) )
+
+    def set_context(self, relativepath, scope, page_type):
+            pageType_folder = f'{page_type}s'
+            filename, extension = os.path.splitext(relativepath)
+            fullpath = join(self.folders[pageType_folder], relativepath)
+
+            if filename == "index":
+                destination_filepath = join(self.expected_folders['destination'],f'{filename}.html')
             else:
-                destination_filepath = join(self.expected_folders['posts'],f'{post_filename}.html')
-            logging.debug(destination_filepath)
-            context = self.scope["global"].copy()
-            context.update(self.scope["posts"][post_filename])
-            context.update({"pages":self.scope["pages"]})
-            context.update({"posts":self.scope["posts"]})
-            context.update({"template_name":post_filename})
+                destination_filepath = join(self.expected_folders[pageType_folder],f'{filename}.html')
+
+
+            context = scope["global"].copy()
+
+            if page_type == "post":
+                context.update({"template":self.templates["post"]})
+            else:
+                context.update({"template":self.templates[filename]})
+
+            context.update(scope[pageType_folder][filename])
+            context.update({"pages":scope["pages"]})
+            context.update({"posts":scope["posts"]})
+            context.update({"template_name":filename})
             context.update({"templates":self.templates})
-            with open(destination_filepath,"w") as outf:
-                outf.write( self.templates["post"].render(context) )
+            context.update({"destination_fullpath": destination_filepath})
+
+            logging.debug(destination_filepath)
+            return context
 
     def find_template(self,filename,type_):
         found = False
