@@ -2,6 +2,7 @@ date: 2019-04-15 10:51:29
 title: Prêt-à-LLOD at ELG
 slug: pret-a-llod-at-elg
 type: post
+summary:  Thierry Declerck was representing the Prêt-à-LLOD project at the Kick-Off Meeting of the newly launched European Language Grid (ELG) project.
 
 Thierry Declerck was representing the Prêt-à-LLOD project at the
 Kick-Off Meeting of the newly launched European Language Grid (ELG)

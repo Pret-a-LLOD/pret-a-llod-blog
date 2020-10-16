@@ -2,6 +2,7 @@ date: 2019-09-04 13:24:02
 title: LLOD at ESSLLI 2019
 slug: llod-at-esslli-2019
 type: post
+summary:  John McCrae and Thierry Declerck gave an introductory lecture on "Introduction to Linked Open Data in Linguistics" at the 31st European Summer School in Logic, Language and Information (ESSLLI) in Riga ...
 
 John McCrae and Thierry Declerck gave an introductory lecture on
 "Introduction to Linked Open Data in Linguistics" at the 31st European

@@ -2,6 +2,9 @@ date: 2020-05-05 11:52:59
 title: Language Technologies.  An ecosystem of linked data
 slug: language-technologies-an-ecosystem-of-linked-data
 type: post
+summary: Language technologies allow us to create computer applications to analyze and process written and spoken natural language. They play a key role in overcoming linguistic barriers across Europe and gradually are paving the way towards a true digital single market.\ However, the data such applications require are hardly "ready to use" ...
+
+
 
 \[First published in Spanish by www.heraldo.es on 17/6/2019. See
 [link](https://www.heraldo.es/noticias/sociedad/2019/06/17/tecnologias-del-lenguaje-un-ecosistema-de-datos-enlazados-proyecto-europeo-pret-a-llod-1320423.html)\]

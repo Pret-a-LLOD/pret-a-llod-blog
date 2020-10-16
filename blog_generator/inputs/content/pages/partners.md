@@ -1,5 +1,6 @@
 title: partners
 slug: partners
+navbar_position: 1
 
 # Pr&ecirc;t-&agrave;-LLOD Partners
 

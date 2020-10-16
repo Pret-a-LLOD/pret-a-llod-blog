@@ -102,6 +102,11 @@ class Builder:
                               , key     = lambda dict_: dict_["date"]
                               , reverse = True
                              ) 
+
+        scope["ordered_pages"] = sorted(
+                [dict(d,**{"name":key}) for key,d in scope["pages"].items()],
+                key= lambda d: d["navbar_position"]
+                )
         return scope, templates
 
     def render_templates(self):
@@ -110,6 +115,7 @@ class Builder:
             page_context = self.set_context(page_relativepath, self.scope, page_type="page")
             p_ctx = page_context
             p_ctx['posts_list'] = self.scope["ordered_posts"]
+            p_ctx['pages_list'] = self.scope["ordered_pages"]
             with open(p_ctx['destination_fullpath'],"w") as outf:
                 outf.write( p_ctx["template"].render(p_ctx) )
 
@@ -149,7 +155,7 @@ class Builder:
 
     def find_template(self,filename,type_):
         found = False
-        matched_templates = [fp for fp in self.templates_filepath if filename in fp]
+        matched_templates = [fp for fp in self.templates_filepath if filename in fp.split("/")[-1]]
         if matched_templates:
             template_filepath = matched_templates[0] 
             return self.jinja_env.from_string(open(template_filepath).read())
@@ -179,4 +185,22 @@ class Builder:
                 print("*"*100)
                 for content in inpf:
                     contents.append(content)
+        if variables.get("date",False):
+            d = variables["date"]
+            year, month, day = d.split(" ")[0].split("-")
+            month_name = {
+                    1:"january",
+                    2:"february",
+                    3:"march",
+                    4:"april",
+                    5:"may",
+                    6:"june",
+                    7:"july",
+                    8:"august",
+                    9:"september",
+                    10:"october",
+                    11:"november",
+                    12:"december"
+                    }[int(month)]
+            variables["formatted_date"] = f'{year} {int(day)}th of {month_name}'
         return variables, contents                

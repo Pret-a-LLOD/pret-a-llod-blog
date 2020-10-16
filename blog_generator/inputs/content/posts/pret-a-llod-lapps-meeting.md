@@ -2,6 +2,7 @@ date: 2019-07-15 16:15:52
 title: Prêt-à-LLOD - LAPPS meeting
 slug: pret-a-llod-lapps-meeting
 type: post
+summary:  Pret-a-LLOD members at NUI Galway met with Marc Verhagen (Brandeis University, USA) on LAPPS (Language Applications) Grid, an open interoperable web service platform for natural language processing research and development ...
 
 Pret-a-LLOD members at NUI Galway met with Marc Verhagen (Brandeis
 University, USA) on LAPPS (Language Applications) Grid, an open

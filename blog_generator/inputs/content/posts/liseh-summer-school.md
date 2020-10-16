@@ -2,6 +2,7 @@ date: 2019-05-28 09:04:08
 title: LiSEH Summer School
 slug: liseh-summer-school
 type: post
+summary:  John McCrae and Thierry Declerck lectured on the topic of linguistic linked open data at the Spring School on Linked Data and the Semantic Web for Humanities Research. In this course, they gave information about key technologies for the use ...
 
 John McCrae and Thierry Declerck lectured on the topic of linguistic
 linked open data at the [Spring School on Linked Data and the Semantic

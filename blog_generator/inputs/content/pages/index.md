@@ -1,5 +1,6 @@
 title: main page
 slug: index
+navbar_position: 5
 
 # The Prêt-à-LLOD Project
 

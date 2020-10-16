@@ -2,6 +2,7 @@ date: 2019-07-16 16:12:42
 title: BDV PPP Meetup
 slug: bdv-ppp-meetup
 type: post
+summary:  During the BDV PPP meetup in Riga (Latvia) held in June 2019, Víctor Rodríguez-Doncel from Universidad Politécnica de Madrid presented the Prêt-à-LLOD project. In particular, he focused on the ethical considerations to...
 
 During the BDV PPP meetup in Riga (Latvia) held in June 2019, Víctor
 Rodríguez-Doncel from Universidad Politécnica de Madrid presented the

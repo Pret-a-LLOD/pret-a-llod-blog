@@ -2,13 +2,10 @@ date: 2019-06-13 10:57:08
 title: Survey: Your Business Expertise on the Language Technology Market needed!
 slug: survey-your-business-expertise-on-the-language-technology-market-needed
 type: post
-
-<div class="wp-block-image">
+summary: The H2020 project on Language Technologies “Prêt-à-LLOD” has started this January. The aim of the project is to provide resources and services for the growing European LT market ... 
 
 ![](http://www.pret-a-llod.eu/wp-content/uploads/2019/06/icon-2967800_960_720.png){.wp-image-238
 width="113" height="113"}
-
-</div>
 
 The H2020 project on Language Technologies “Prêt-à-LLOD” has started
 this January. The aim of the project is to provide resources and
@@ -25,9 +22,5 @@ plus the final Report of the survey.
 
  In the hope to convince you for some help.
 
-<div class="wp-block-button aligncenter is-style-outline">
-
 [Complete the
 Questionnaire](https://swc4.typeform.com/to/nrm9Xt){.wp-block-button__link}
-
-</div>

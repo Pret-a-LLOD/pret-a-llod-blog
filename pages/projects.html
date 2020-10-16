@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" href="../static/bootstrap.min.css" integrity="">
 </head>
+<title>Pr&ecirc;t-&agrave;-LLOD Partners</title>
 <body>
 <head>
     <style>
@@ -33,41 +34,87 @@
   
   <!-- Links -->
   <ul class="nav navbar-nav navbar-right">
+            
+      <li class="nav-item">
+          
+              <a class="nav-link" href="../pages/partners.html">partners</a>
+          
+        </li>
+            
+      <li class="nav-item">
+          
+              <a class="nav-link" href="../pages/projects.html">projects</a>
+          
+        </li>
+            
+      <li class="nav-item">
+          
+              <a class="nav-link" href="../pages/about.html">About</a>
+          
+        </li>
+            
+      <li class="nav-item">
+          
+              <a class="nav-link" href="../pages/blog.html">blog</a>
+          
+        </li>
+            
+      <li class="nav-item">
+          
+              <a class="nav-link" href="../index.html">main page</a>
+          
+        </li>
     
   </ul>
   </div>
 </nav>
 
-<div class="jumbotron">
-<p><img src="https://www.pret-a-llod.eu/wp-content/uploads/2020/01/Ethics-workshop.png" alt="" />{.wp-image-366}</p>
+<div class="row">
+<div class="container">
+<h1>Pr&ecirc;t-&agrave;-LLOD Projects</h1>
 
-<p><em>Are we doing anything wrong in Prêt-à-LLOD?</em> <em>What is the impact of the
-Prêt-à-LLOD algorithmic decision-making and machine learning in the
-context of the project pilots?</em></p>
+<p>Our projects are all available at <a href="https://github.com/pret-a-LLOD/">GitHub</a></p>
 
-<p>The Prêt-à-LLOD project partners have been mandated to answer these
-questions, or at least to further research on the consequences of the
-execution of this project. But in this inquiry, the Prêt-à-LLOD team is
-not only acting due to a contractual obligation, but it is also
-motivated by the awareness of the potentially high impact of this
-project. The fast development of language technologies, and the growing
-extension of their application are unleashing fundamental changes in our
-society, and even if Prêt-à-LLOD represents a tiny contribution to a
-revolution, the Prêt-à-LLOD team wants to evaluate its impact.</p>
+<h2><a href="https://github.com/pret-a-LLOD/termitup">termitup</a></h2>
 
-<p>For this regard, 25 people working for the Prêt-à-LLOD people conducted
-a participatory activity where these questions were systematically
-analysed. The activity was facilitated by Víctor Rodríguez-Doncel and
-the UPM team in Vienna in November 2019. Having formed four working
-groups a canvas-based analysis was made for each of the pilots. The
-people were arranged in groups of approximately equal size, and were
-moderated by one person who scribed the discussions. The ADAPT Ethics
-Canvas (<a href="https://ethicscanvas.org/canvas/index.php">template available
-online</a>) was used as the
-guiding thread, and the notes taken by the facilitator were shared in a
-later stage. A summary and conclusions have been presented in
-Deliverable D7.2.\</p>
+<p>TermitUp is a tool for terminology enrichment: given a domain specific corpus, TermitUp performs statistical terminology extraction (with TBXTools) and cleans the resulting term list with a series of liguistic processes. Then, it queries several language resources (some part of the Linguistic Linked Open Data cloud) for candidate terms matching those in the term list.
+TermitUp builds sense indicators for both the source and the candidate terms, and performs a Word Sense Disambiguation process (with Semantic Web Company's service), matching those concepts with the closest domain. From the concepts matched in the external resources, TermitUp retrieves every piece of information available (translations, synonyms, definitions and terminological relations), already disambiguated, and enriches the source term lists, creating links amongst the resources in the LLOD.
+Afterwards, TermitUp offers the possibility of creating hierarchical relations amongst the terms in the source list and also of validating the synonymy relations retrieved from the external resources. Finally, the results are published in separate json-ld files, modeled in SKOS-XL, that permits keeping the provenance of specific pieces of the data retrieved.</p>
 
+<h2><a href="https://github.com/pret-a-LLOD/teanga">teanga</a></h2>
+
+<p>Teanga is a command-line tool that automates and facilitates using sequences of containerized rest api as a workflow. It aims at creation of complex Natural Language Processing workflows using Airflow, OpenAPI specification and docker.</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/term-a-LLOD">term-a-LLOD</a></h2>
+
+<p>A system for transforming and publishing terminologies as linked data which relies on a virtualization approach (i.e. docker). The system simplifies the transformation and hosting of terminological resources. As a proof-of-concept we publish and link the well-known IATE terminology as well as to various smaller terminologies. The program is written in java.</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/pddm">pddm</a></h2>
+
+<p>Policy Driven Data Manager</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/CIDER-EM">CIDER-EM</a></h2>
+
+<p>Context and Inference baseD ontology alignER.
+CIDER-EM is a word-embedding-based system for monolingual and cross-lingual ontology alignment. Evolves the CIDER-CL tool by including the use of word embeddings.</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/linghub">linghub</a></h2>
+
+<p>linghub</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/ontology-lexicalization">ontology-lexicalization</a></h2>
+
+<p>The system extracts property lexicalization patterns from a set of annotated (i.e. DBpedia/Wikidata annotated) Corpora and to To extract RDF graph patterns corresponding to an ngram and develops a Lemon Lexicon. The program is developed using perl and java.</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/Fintan">Fintan</a></h2>
+
+<p>Flexible INtegrated Transformation and Annotation eNgineering platform</p>
+
+<h2><a href="https://github.com/pret-a-LLOD/PaL-Linking">PaL-Linking</a></h2>
+
+<p>Collection of components (submodules) that constitute the Prêt-à-LLOD linking framework</p>
+
+</div>
 </div>
 
 <head>

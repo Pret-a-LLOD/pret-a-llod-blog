@@ -2,6 +2,7 @@ date: 2019-04-15 10:45:20
 title: ELEXIS Observer Event
 slug: elexis-observer-event
 type: post
+summary: Two members of the Prêt-à-LLOD project attended the ELEXIS observer event in their role as ELEXIS partners. The ELEXIS project is focused on lexicographic data and is developing technologies using linked data to help connect lexical resource. It is expected that this project would further expand their capabilities based on technologies developed in Prêt-à-LLOD ...
 
 Two members of the Prêt-à-LLOD project attended the ELEXIS observer
 event in their role as ELEXIS partners. The ELEXIS project is focused on

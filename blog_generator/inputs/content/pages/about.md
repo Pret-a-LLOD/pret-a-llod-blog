@@ -1,7 +1,8 @@
 title: About
 slug: about
+navbar_position: 3
 
-# About the Pr&ecric;t-&agrave;-LLOD Project
+# About the Pr&ecirc;t-&agrave;-LLOD Project
 Language technologies increasingly rely on large amounts of data and
 better access and usage of language resources will enable to provide
 multilingual solutions that would support the emerging Digital Single

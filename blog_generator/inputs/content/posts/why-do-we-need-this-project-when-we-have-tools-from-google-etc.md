@@ -2,6 +2,7 @@ date: 2020-05-06 18:47:37
 title: Why do we need this project when we have tools from Google etc?
 slug: why-do-we-need-this-project-when-we-have-tools-from-google-etc
 type: post
+summary:  Citizens and businesses of different nationalities often face barriers when using digital tools and services. Consumers have restricted access in some cases, and governments and citizens cannot fully benefit from this digital transformation. The solution is ...
 
 Citizens and businesses of different nationalities often face barriers
 when using digital tools and services. Consumers have restricted access

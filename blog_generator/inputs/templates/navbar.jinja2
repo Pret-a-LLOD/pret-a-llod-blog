@@ -19,15 +19,15 @@
 <nav class="navbar navbar-expand-sm">
   <div class="container-fluid">
   <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="{{BASE_FOLDER}}/index.html">
     <img src="{{BASE_FOLDER}}/static/img.jpg" alt="logo" style="height:100px">
   </a>
   
   <!-- Links -->
   <ul class="nav navbar-nav navbar-right">
-    {% for page_name, page_dict in pages.items() %}        
+    {% for page_dict in pages_list %}        
       <li class="nav-item">
-          {% if page_name != "index" %}
+          {% if page_dict['name'] != "index" %}
               <a class="nav-link" href="{{BASE_FOLDER}}/pages/{{ page_dict['slug'] }}.html">{{page_dict['title']}}</a>
           {% else %}
               <a class="nav-link" href="{{BASE_FOLDER}}/{{ page_dict['slug'] }}.html">{{page_dict['title']}}</a>

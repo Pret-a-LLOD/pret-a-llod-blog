@@ -2,10 +2,11 @@ date: 2019-10-24 09:53:02
 title: TEI-OntoLex Workshop
 slug: tei-ontolex-workshop
 type: post
+summary:  In collaboration with the ELEXIS H2020 project, a two day workshop connecting the main developers of the OntoLex-Lemon model and the TEI Lex-0 model was held on the 4th and 5th of October in Sintra ...
 
 In collaboration with the ELEXIS H2020 project, a two day workshop
 connecting the main developers of the OntoLex-Lemon model and the TEI
-Lex-0 model was held on the 4^th^ and 5^th^ of October in Sintra,
+Lex-0 model was held on the 4th and 5th of October in Sintra,
 Portugal after the eLex conference. In this meeting, discussions were
 held about the interaction of the two models and their differences. As a
 principal results, it was surmised that the models were complementary as

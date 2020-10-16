@@ -2,6 +2,8 @@ date: 2020-02-04 11:08:25
 title: Prêt-à-LLOD at JURIX 2019
 slug: pret-a-llod-at-jurix-2019
 type: post
+summary:  The 32nd International Conference on Legal Knowledge and Information Systems (JURIX 2019) took place this year in Madrid on December 11th-13th, organised by Universidad Politécnica de Madrid (UPM) ...
+
 
 ![](https://www.pret-a-llod.eu/wp-content/uploads/2020/02/2019.12.13.pret-a-llod_in_JURIX-1024x768.jpg){.wp-image-371}
 
