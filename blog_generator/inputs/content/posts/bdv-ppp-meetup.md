@@ -12,4 +12,4 @@ Making language resources ready-to-use unleashes new powers that have to
 be tamed for the general good --the eSides community was consulted in
 this fruitful session.
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2019/07/BDV-PPP.png){.wp-image-288}
+![](../static/BDV-PPP.png)

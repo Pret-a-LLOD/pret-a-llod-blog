@@ -107,7 +107,7 @@ images, textual descriptions, translations to other languages, etc.
 without the need to modify the source data and just by adding the
 appropriate links.\
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2020/05/llodcloud-2019.jpeg){.wp-image-390}
+![](../static/llodcloud-2019.jpeg)
 
 The Linguistic Linked Data Cloud
 (<https://linguistic-lod.org/llod-cloud>) . The nodes represent various

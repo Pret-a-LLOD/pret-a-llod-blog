@@ -5,7 +5,7 @@ type: post
 summary:  The 32nd International Conference on Legal Knowledge and Information Systems (JURIX 2019) took place this year in Madrid on December 11th-13th, organised by Universidad Politécnica de Madrid (UPM) ...
 
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2020/02/2019.12.13.pret-a-llod_in_JURIX-1024x768.jpg){.wp-image-371}
+![](../static/2019.12.13.pret-a-llod_in_JURIX-1024x768.jpg)
 
 The 32nd International Conference on Legal Knowledge and Information
 Systems (JURIX 2019 <https://jurix2019.oeg-upm.net/>) took place this

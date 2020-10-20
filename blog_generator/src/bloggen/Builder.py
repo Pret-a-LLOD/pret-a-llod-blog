@@ -122,6 +122,7 @@ class Builder:
         for post_context in self.scope["ordered_posts"]:
             p_ctx = post_context
             p_ctx['posts_list'] = self.scope["ordered_posts"]
+            p_ctx['pages_list'] = self.scope["ordered_pages"]
             with open(p_ctx['destination_fullpath'],"w") as outf:
                 outf.write( p_ctx['template'].render(p_ctx) )
 

@@ -16,10 +16,6 @@ representing corpora annotations and finally guidelines for publishing
 on the linked open data cloud. The lectures have been recorded and are
 now available on YouTube.
 
-<div class="wp-block-embed__wrapper">
-
-https://www.youtube.com/watch?v=hl1fnaUpMMc&list=PLXhZBBpMXr0K867wGyvPIrfUE6F9oqBVV
-
-</div>
+<https://www.youtube.com/watch?v=hl1fnaUpMMc&list=PLXhZBBpMXr0K867wGyvPIrfUE6F9oqBVV>
 
 Thierry Declerck and John McCrae lecturing at ESSLLI

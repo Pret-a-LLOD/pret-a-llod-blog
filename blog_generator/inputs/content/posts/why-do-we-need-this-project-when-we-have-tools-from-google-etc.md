@@ -52,7 +52,7 @@ and place, education, family, etc.) of *Barack Obama* and related
 information (such as a predecessor, African American leaders, White
 House, etc) users have to go through many documents and browse them.
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2020/05/Obama-1024x551.png){.wp-image-403}
+![](../static/Obama-1024x551.png)
 
 In google search, when searching *Barack Obama* a user has to go through
 many documents to get related information (such as a predecessor, white
@@ -79,7 +79,7 @@ to develop linked data applications. They are:
     (i.e. apple to linked to fruit), and a concept to another concept of
     a knowledge base (i.e. [DBpedia](https://wiki.dbpedia.org/)).
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2020/05/Obama-Bush-613x1024.png){.wp-image-404}
+![](../static/Obama-Bush-613x1024.png)
 
 An [application](https://doi.org/10.1007/s11042-011-0733-1) developed on
 linked data, the search result can provide a list of related entities,

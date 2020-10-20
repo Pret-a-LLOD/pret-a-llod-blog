@@ -5,7 +5,7 @@ type: post
 summary:  Semalytix are providing meaningful insights from a variety of online sources in order to find out what really matters to patients coping with a particular disease.
 
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2020/05/SEM-blogpost-1024x509.jpg){.wp-image-381}
+![](../static/SEM-blogpost-1024x509.jpg)
 
 Semalytix are providing meaningful insights from a variety of online
 sources in order to find out what really matters to patients coping with

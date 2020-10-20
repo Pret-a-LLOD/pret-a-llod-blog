@@ -4,7 +4,7 @@ slug: ethics-assessment-of-pret-a-llod
 type: post
 summary:  Are we doing anything wrong in Prêt-à-LLOD? What is the impact of the Prêt-à-LLOD algorithmic decision-making and machine learning in the context of the project pilots?
 
-![](https://www.pret-a-llod.eu/wp-content/uploads/2020/01/Ethics-workshop.png){.wp-image-366}
+![](../static/Ethics-workshop.png)
 
 *Are we doing anything wrong in Prêt-à-LLOD?* *What is the impact of the
 Prêt-à-LLOD algorithmic decision-making and machine learning in the
