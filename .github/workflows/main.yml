@@ -2,9 +2,9 @@ name: CI
 
 on:
   push:
-    branches: [ ghpages ]
+    branches: [ master ]
   pull_request:
-    branches: [ ghpages ]
+    branches: [ master ]
 
 jobs:
   report:
@@ -28,6 +28,9 @@ jobs:
         run: |
           git config --global user.name 'berstearns'
           git config --global user.email 'bernardo.stearns@gmail.com'
-          git add .
+          git add index.html
+          git add posts
+          git add pages
+          git add static
           git commit -am "[GITHUB ACTIONS] Automated blog generation"
-          git push -f
+          git push origin ghpages 
