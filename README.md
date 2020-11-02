@@ -39,6 +39,7 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
   ```
   
 ### 2. The markdown filename must be the same as the slug variable:
+
     make sure the filename and the slug variable inside the file are the same
     
 ## How to **edit** existing blog POSTS ?
