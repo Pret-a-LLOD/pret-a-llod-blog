@@ -8,6 +8,7 @@ For creating a new blog post you need to create a markdown(.md) file in the fold
 We recommend copying an already existing post [(here)](https://github.com/Pret-a-LLOD/pret-a-llod.github.io/tree/master/blog_generator/inputs/content/posts) to avoid mistakes.
 
 **1. The markdown file must have two sections**
+
 **2. The markdown filename must be the same as the slug variable**
 
 ### 1. The markdown file must have two sections:
