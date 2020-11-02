@@ -33,4 +33,4 @@ jobs:
           git add pages
           git add static
           git commit -am "[GITHUB ACTIONS] Automated blog generation"
-          git push origin master:ghpages 
+          git push -f origin master:ghpages 
