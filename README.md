@@ -19,8 +19,10 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
   2. **content** (markdown/text that will be displayed in the blog as html)
   
   EXAMPLE:
+  
   create a file named this-is-the-title-of-my-post.md in **blog_generator/inputs/content/posts/**
   **notice there must be a line break between the variables and the content to distinguish both**
+  
   ```
     date: 2020-02-30 12:09:55
     title: this is the title of my post
