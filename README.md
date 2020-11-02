@@ -48,5 +48,9 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
 ## How to **edit** existing blog POSTS ?
 
 
+## How to **refer** to image and links in the content of a POST ?
+
+## How to **upload** an image to be used ?
+
 ## How to **add** new PAGES to the blog ?
 
