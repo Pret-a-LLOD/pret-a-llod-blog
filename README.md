@@ -16,7 +16,7 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
   1. **variables** (anything that is extra information to be used about the blog post). **required variables**:
       - **date**: must follow format "2019-09-27 04:19:01" "year-month-day hour:minutes:seconds"
       - **title**: a single line title
-      - **slug**: a single line text separated by "-" instead of spaces " "; we recommend using the title text separated by "-"
+      - **slug**: a single line text separated by "-" instead of spaces " "
       - **type**: always "post"
       - **summary**: a single line text summarizing the content of the post 
       
