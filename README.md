@@ -39,19 +39,23 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
     
+    ![](../static/logo-cut-final-300x142.png)
+    
     Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
   ```
   
 ### 2. The markdown filename must be the same as the slug variable:
-
-    make sure the filename and the slug variable inside the file are the same
+make sure the filename and the slug variable inside the file are the same
     
 ## How to **edit** existing blog POSTS ?
+just edit the .md file in the blog_generator/inputs/content/posts/  and commit the changes
 
 
 ## How to **refer** to image and links in the content of a POST ?
+![](../static/{image_filename}) for images and [a website](http://website.com)
 
 ## How to **upload** an image to be used ?
+just add the image file to **blog_generator/inputs/static/**
 
 ## How to **add** new PAGES to the blog ?
 
