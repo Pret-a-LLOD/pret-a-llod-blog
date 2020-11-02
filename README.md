@@ -21,6 +21,7 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
   EXAMPLE:
   
   create a file named this-is-the-title-of-my-post.md in **blog_generator/inputs/content/posts/**
+  
   **notice there must be a line break between the variables and the content to distinguish both**
   
   ```
@@ -36,6 +37,7 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
     
     Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
   ```
+  
 ### 2. The markdown filename must be the same as the slug variable:
     make sure the filename and the slug variable inside the file are the same
     
