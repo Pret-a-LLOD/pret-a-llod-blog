@@ -1,10 +1,10 @@
 name: CI
 
-on:
-  [push, pull_request]:
-    branches: [ master ]
-    paths:
-          - '/blog_generator/inputs/'
+on: 
+    push:
+        branches: [ master ]
+        paths:
+              - '/blog_generator/inputs/'
 
 jobs:
   report:
