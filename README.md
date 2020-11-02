@@ -9,14 +9,14 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
 
 ### 1. The markdown file must have two sections:
 
-  1. variables (anything that is extra information to be used about the blog post). **required variables**:
+  1. **variables** (anything that is extra information to be used about the blog post). **required variables**:
       - **date**: must follow format "2019-09-27 04:19:01" "year-month-day hour:minutes:seconds"
       - **title**: a single line title
       - **slug**: a single line text separated by "-" instead of spaces " "; we recommend using the title text separated by "-"
       - **type**: always "post"
       - **summary**: a single line text summarizing the content of the post 
       
-  2. content (markdown/text that will be displayed in the blog as html)
+  2. **content** (markdown/text that will be displayed in the blog as html)
   
   EXAMPLE:
   create a file named this-is-the-title-of-my-post.md in **blog_generator/inputs/content/posts/**
@@ -34,15 +34,11 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
     
     Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
   ```
-
-2. The filename and the slug variable must be the same.
-1. create a markdown file or copy a post already created [here](https://github.com/Pret-a-LLOD/pret-a-llod.github.io/tree/master/blog_generator/inputs/content/posts)
-
-2. name it {nameofthepost}.md
+### 2. The markdown filename must be the same as the slug variable:
+    make sure the filename and the slug variable inside the file are the same
+    
+## How to **edit** existing blog POSTS ?
 
 
 ## How to **add** new PAGES to the blog ?
-
-
-## How to **edit** POSTS to the  ?
 
