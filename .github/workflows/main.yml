@@ -5,7 +5,6 @@ on:
         branches: [ master ]
         paths:
               - 'blog_generator/inputs/**'
-
 jobs:
   report:
     runs-on: ubuntu-latest
