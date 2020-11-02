@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-            ref: ghpages
+            ref: master 
       - name: Setup python
         uses: actions/setup-python@v2
         with:
