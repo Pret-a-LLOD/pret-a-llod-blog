@@ -10,9 +10,12 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
 ### 1. The markdown file must have two sections:
 
   1. variables (anything that is extra information to be used about the blog post). **required variables**:
-      - 1
-      - 2
-      - 3
+      - date: must follow format "2019-09-03 14:49:11" "year-month-day hour:minutes:seconds"
+      - title: a single line title
+      - slug: a single line text separated by "-" instead of spaces " "; we recommend using the title text separated by "-"
+      - type: always "post"
+      - summary: a single line text summarizing the content of the post 
+      
   2. content (markdown/text that will be displayed in the blog as html)
   
   ```
