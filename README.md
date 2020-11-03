@@ -52,7 +52,7 @@ just edit the .md file in the blog_generator/inputs/content/posts/  and commit t
 
 
 ## How to **refer** to image and links in the content of a POST ?
-![](../static/{image_filename}) for images and [a website](http://website.com)
+`![](../static/{image_filename}) for images and [a website](http://website.com)`
 
 ## How to **upload** an image to be used ?
 just add the image file to **blog_generator/inputs/static/**
