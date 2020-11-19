@@ -18,3 +18,6 @@ Derilinx, as a partner in EU Funded project Pret-a-llod, is in the process of fi
 Derilinx will run a demonstration of Kweery in this webinar.
 
 You can register [here](https://register.gotowebinar.com/register/4126082720768420366).
+
+
+![](../static/derilinx-kweery-invitation.jpeg)
