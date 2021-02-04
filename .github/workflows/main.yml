@@ -3,8 +3,6 @@ name: CI
 on: 
     push:
         branches: [ master ]
-        paths:
-              - 'blog_generator/inputs/**'
 
 jobs:
   report:
@@ -19,18 +17,18 @@ jobs:
           python-version: '3.6'
           architecture: x64
       - run: |
-          rm -rf posts pages static index.html
-          cd blog_generator
           python -m pip install -r requirements.txt -U
-          cd ..
-          python blog_generator/manage.py
-      - name: Commit report
-        run: |
+          lektor build --output-path website
+          mv -i website/* .
+          rm -rf website
           git config --global user.name 'berstearns'
           git config --global user.email 'bernardo.stearns@gmail.com'
-          git add index.html
-          git add posts
-          git add pages
-          git add static
+          git add .
+          git stash
+          git remote update
+          git fetch 
+          git checkout ghpages
+          git checkout stash -- .
+          git add .
           git commit -am "[GITHUB ACTIONS] Automated blog generation"
-          git push -f origin master:ghpages 
+          git push origin ghpages 
