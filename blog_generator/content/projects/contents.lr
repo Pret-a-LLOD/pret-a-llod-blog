@@ -19,9 +19,9 @@ Teanga is a command-line tool that automates and facilitates using sequences of 
 A system for transforming and publishing terminologies as linked data which relies on a virtualization approach (i.e. docker). The system simplifies the transformation and hosting of terminological resources. As a proof-of-concept we publish and link the well-known IATE terminology as well as to various smaller terminologies. The program is written in java.
 
 
-## [pddm](https://github.com/pret-a-LLOD/pddm)
+## [Policy Driven Data Manager (PDDM)](https://pddm-pal.oeg.fi.upm.es/)
 
-Policy Driven Data Manager
+  PDDM offers everything necessary for a policy-driven data management: data models (vocabularies to support RDF licensing data), data (licenses as RDF!), and services (HTTP REST API for compliance checking).
 
 ## [CIDER-EM](https://github.com/pret-a-LLOD/CIDER-EM)
 
