@@ -1,0 +1,367 @@
+<!doctype html>
+{% if this.isindex %}
+    {% set BASE_FOLDER = "." %}
+{% else %}
+    {% set BASE_FOLDER = ".." %}
+{% endif %}
+<head>
+    <link rel="stylesheet" href="{{BASE_FOLDER}}/static/bootstrap.min.css" integrity="">
+    <style>
+        .twitter-timeline {
+            width: 100vw !important;
+        }
+        img {
+            max-width: 100%;
+        }
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        .content {
+            margin-left: 5px;
+            height: fit-content;
+        }
+        @media (min-width:891px)
+        {
+            .content {
+                margin-left: -50px;
+                height: fit-content;
+            }
+        }
+        .navbar .nav-link:hover {
+          border-bottom: 3px solid red;
+          color: red;
+        }
+        .navbar a {
+          text-transform:capitalize;
+          color: #333;
+        }
+        .navbar {
+          border-bottom: 1px dashed #aaa;
+          border-top: 1px dashed #aaa;
+          margin: 5px;
+        }
+        #formcontainer {
+                text-align: left;
+                margin-left: 0px;
+        }
+         #sidebar {
+            display: block;
+         }
+
+        footer img {
+            margin-top: 2px;
+        }
+        .site-footer
+        {
+          border-top: 1px dashed #aaa;
+          padding:10px 0 10px;
+          font-size:15px;
+          line-height:24px;
+          color:#737373;
+        }
+        .site-footer hr
+        {
+          border-top-color:#bbb;
+          opacity:0.5
+        }
+        .site-footer h6
+        {
+          color:#fff;
+          font-size:16px;
+          text-transform:uppercase;
+          margin-top:5px;
+          letter-spacing:2px
+        }
+        .site-footer a
+        {
+          color:#737373;
+        }
+        .site-footer a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links
+        {
+          padding-left:0;
+          list-style:none
+        }
+        .footer-links li
+        {
+          display:block
+        }
+        .footer-links a
+        {
+          color:#737373
+        }
+        .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links.inline li
+        {
+          display:inline-block
+        }
+        .site-footer .social-icons
+        {
+          text-align:right
+        }
+        .site-footer .social-icons a
+        {
+          width:40px;
+          height:40px;
+          line-height:40px;
+          margin-left:6px;
+          margin-right:0;
+          border-radius:100%;
+          background-color:#33353d
+        }
+        .copyright-text
+        {
+          margin:0
+        }
+        @media (max-width:991px)
+        {
+          .site-footer [class^=col-]
+          {
+            margin-bottom:30px
+          }
+        }
+        @media (max-width:767px)
+        {
+          .site-footer
+          {
+            padding-bottom:0
+          }
+          .site-footer .copyright-text,.site-footer .social-icons
+          {
+            text-align:center
+          }
+        }
+        .social-icons
+        {
+          padding-left:0;
+          margin-bottom:0;
+          list-style:none
+        }
+        .social-icons li
+        {
+          display:inline-block;
+          margin-bottom:4px
+        }
+        .social-icons li.title
+        {
+          margin-right:15px;
+          text-transform:uppercase;
+          color:#96a2b2;
+          font-weight:700;
+          font-size:13px
+        }
+        .social-icons a{
+          background-color:#eceeef;
+          color:#818a91;
+          font-size:16px;
+          display:inline-block;
+          line-height:44px;
+          width:44px;
+          height:44px;
+          text-align:center;
+          margin-right:8px;
+          border-radius:100%;
+          -webkit-transition:all .2s linear;
+          -o-transition:all .2s linear;
+          transition:all .2s linear
+        }
+        .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+        {
+          color:#fff;
+          background-color:#29aafe
+        }
+        .social-icons.size-sm a
+        {
+          line-height:34px;
+          height:34px;
+          width:34px;
+          font-size:14px
+        }
+        .social-icons a.facebook:hover
+        {
+          background-color:#3b5998
+        }
+        .social-icons a.twitter:hover
+        {
+          background-color:#00aced
+        }
+        .social-icons a.linkedin:hover
+        {
+          background-color:#007bb6
+        }
+        .social-icons a.dribbble:hover
+        {
+          background-color:#ea4c89
+        }
+        @media (max-width:767px)
+        {
+          .social-icons li.title
+          {
+            display:block;
+            margin-right:0;
+            font-weight:600
+          }
+        }
+
+    /* Style the form element with a border around it */
+    .subscribe-form * {
+        font-size: 16px;
+    }
+    .subscribe-form h2 {
+        font-size: 24px;
+    }
+    .subscribe-form {
+      width: 300%;
+      border: 4px solid #f1f1f1;
+    }
+    @media (min-width:891px)
+    {
+        .subscribe-form {
+          width: 300%;
+          border: 4px solid #f1f1f1;
+        }
+    }
+
+    /* Add some padding and a grey background color to containers */
+    .form-container {
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Add margins to the checkbox */
+    input[type=checkbox] {
+      margin-top: 16px;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+    </style>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{BASE_FOLDER}}/static/style.css}}">
+<title>{% block title %}Welcome{% endblock %} — pret-a-llod</title>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="{{'/'|url }}">
+          <img src="{{BASE_FOLDER}}/static/img.jpg" alt="logo" style="height:100px">
+      </a>
+      
+      <!-- Links -->
+      <ul class="nav navbar-nav navbar-right">
+        {% for href, title in [
+              ['/partners', 'Partners'],
+              ['/projects', 'Projects'],
+              ['/about', 'About'],
+              ['/blog', 'Blog'],
+            ] 
+        %}        
+          <li class="nav-item">
+                  <a class="nav-link" href="{{ href|url}}">{{ title }}</a>
+          </li>
+        {% endfor %}
+        <a class="nav-link" href="{{'/'|url }}">Main Page</a>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  {% if this.isindex %}
+  <div class="jumbotron" style="background-image:url('{{BASE_FOLDER}}/static/website-new-banner.jpg');background-repeat:no-repeat;background-size:cover;height:320px;"></div>
+  {% endif %}
+    <div class="container">
+       <div class="row">
+        <div class="content jumbotron col-9">
+        {% block body %}{% endblock %}
+        </div>
+        <div class="col-2" id="sidebar">
+            <form  class="subscribe-form" action="action_page.php">
+              <div class="form-container">
+                <h2>Subscribe to our Newsletter</h2>
+              </div>
+
+              <div class="container" style="background-color:white">
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email" name="mail" required>
+              </div>
+
+              <div class="container">
+                <input type="submit" value="Subscribe">
+              </div>
+            </form>
+
+            <a class="twitter-timeline" data-width="420" data-height="500" href="https://twitter.com/pret_a_llod?ref_src=twsrc%5Etfw">Tweets by pret_a_llod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+       </div>
+    </div>
+
+
+
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h6>Partners</h6>
+            <a href="https://www.uni-bielefeld.de/"><img src="{{BASE_FOLDER}}/static/bielefeld-logo-600x220.jpg" alt="Bielefeld University" style="height:50px"></a>
+            <a href="https://derilinx.com/"><img src="{{BASE_FOLDER}}/static/Derilinx-Logo-600x220.jpg" alt="Derilinx" style="height:50px"></a>
+            <a href="https://www.dfki.de/web/"><img src="{{BASE_FOLDER}}/static/DFKI-logo-600x220.jpg" alt="DFKI GmbH" style="height:50px"></a>
+            <a href="https://www.goethe-university-frankfurt.de/en?locale=en"><img src="{{BASE_FOLDER}}/static/Goethe-University-Frankfurt-logo-600x220.jpg" alt="Goethe University Frankfurt" style="height:50px"></a>
+            <a href="http://www.nuigalway.ie/"><img src="{{BASE_FOLDER}}/static/NUIG-logo-600x220.jpg" alt="NUI Galway" style="height:50px"></a>
+            <a href="https://global.oup.com/"><img src="{{BASE_FOLDER}}/static/OUP-logo-600x220.jpg" alt="Oxford University Press" style="height:50px"></a>
+            <a href="https://www.semalytix.com/"><img src="{{BASE_FOLDER}}/static/symalytics-logo-1-600x220.jpg" alt="Semalytix" style="height:50px"></a>
+            <a href="https://www.unizar.es/"><img src="{{BASE_FOLDER}}/static/universidad-de-zaragoza-logo-600x220.jpg" alt="University of Zaragoza" style="height:50px"></a>
+            <a href="https://www.upm.es/"><img src="{{BASE_FOLDER}}/static/UPM-logo-600x220.jpg" alt="Polytechnic University of Madrid" style="height:50px"></a>
+            <a href="https://semantic-web.com/"><img src="{{BASE_FOLDER}}/static/swc-logo-600x220.jpg" alt="Semantic Web Company" style="height:50px"></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img src="{{BASE_FOLDER}}/static/horizon2020-eu-commission-logo-200.png" alt="Horizon 2020">
+            <p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 825182.</p>
+          </div>
+
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Pr&ecirc;t-&agrave;-LLOD Project</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>
