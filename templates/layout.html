@@ -1,12 +1,5 @@
 <!doctype html>
-{% if this.isindex == "root" %}
-    {% set BASE_FOLDER = "." %}
-{% elif this.isindex == "base"  %}
-    {% set BASE_FOLDER = ".." %}
-{% else %}
-    
-    {% set BASE_FOLDER = "././." %}
-{% endif %}
+{% set BASE_FOLDER = "" %}
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W97M9NLV1S"></script>
