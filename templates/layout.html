@@ -1,8 +1,11 @@
 <!doctype html>
-{% if this.isindex %}
+{% if this.isindex == "root" %}
     {% set BASE_FOLDER = "." %}
-{% else %}
+{% elif this.isindex == "base"  %}
     {% set BASE_FOLDER = ".." %}
+{% else %}
+    
+    {% set BASE_FOLDER = "././." %}
 {% endif %}
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -277,7 +280,6 @@
 <link rel="stylesheet" href="{{BASE_FOLDER}}/static/style.css}}">
 <title>{% block title %}Welcome{% endblock %} — pret-a-llod</title>
 <body>
-
   <header>
     <nav class="navbar navbar-expand-sm">
       <div class="container-fluid">
@@ -305,7 +307,7 @@
     </nav>
   </header>
   {% if this.isindex %}
-  <div class="jumbotron" style="background-image:url('{{BASE_FOLDER}}/static/website-new-banner.jpg');background-repeat:no-repeat;background-size:cover;height:320px;"></div>
+  <div class="jumbotron" style="background-image:url('{{BASE_FOLDER}}/static/website-new-banner.jpg');background-repeat:no-repeat;background-size:cover;height:60vh;"></div>
   {% endif %}
     <div class="container">
        <div class="row">

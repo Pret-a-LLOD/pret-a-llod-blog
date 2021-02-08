@@ -1,3 +1,5 @@
 _model: blog
 ---
+isindex: "base" 
+---
 title: Blog
