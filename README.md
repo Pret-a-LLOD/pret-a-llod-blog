@@ -34,7 +34,7 @@ We recommend copying an already existing post [(here)](https://github.com/Pret-a
     Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
     Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
     
-    this is an image for the post ![](../static/logo-cut-final-300x142.png)
+    this is an image for the post ![](./logo-cut-final-300x142.png)
     
     Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. 
   ```
