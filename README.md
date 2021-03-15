@@ -48,7 +48,7 @@ just edit the .lr file in the content/blog/<name-of-post> folder and commit the 
 
 
 ## How to **refer** to image and links in the content of a POST ?
-`![](./{image_filename}) for images and [a website](http://website.com)`
+`![](./image_filename) for images and [a website](http://website.com)`
 
 ## How to **upload** an image to be used ?
 just add the image file to **content/blog/<name-of-image>**
