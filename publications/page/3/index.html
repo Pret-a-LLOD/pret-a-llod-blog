@@ -1,0 +1,595 @@
+<!doctype html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W97M9NLV1S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W97M9NLV1S');
+    </script>
+    <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="">
+    <style>
+        .twitter-timeline {
+            width: 100vw !important;
+        }
+        img {
+            max-width: 100%;
+        }
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        .content {
+            margin-left: 5px;
+            height: fit-content;
+        }
+        @media (min-width:891px)
+        {
+            .content {
+                margin-left: -15px;
+                height: fit-content;
+            }
+        }
+        .navbar .nav-link:hover {
+          border-bottom: 3px solid red;
+          color: red;
+        }
+        .navbar a {
+          text-transform:capitalize;
+          color: #333;
+        }
+        .navbar {
+          border-bottom: 1px dashed #aaa;
+          border-top: 1px dashed #aaa;
+          margin: 5px;
+        }
+        #formcontainer {
+                text-align: left;
+                margin-left: 0px;
+        }
+         #sidebar {
+            width: 20%;
+            display: block;
+         }
+
+        footer img {
+            margin-top: 2px;
+        }
+        .site-footer
+        {
+          border-top: 1px dashed #aaa;
+          padding:10px 0 10px;
+          font-size:15px;
+          line-height:24px;
+          color:#737373;
+        }
+        .site-footer hr
+        {
+          border-top-color:#bbb;
+          opacity:0.5
+        }
+        .site-footer h6
+        {
+          color:#fff;
+          font-size:16px;
+          text-transform:uppercase;
+          margin-top:5px;
+          letter-spacing:2px
+        }
+        .site-footer a
+        {
+          color:#737373;
+        }
+        .site-footer a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links
+        {
+          padding-left:0;
+          list-style:none
+        }
+        .footer-links li
+        {
+          display:block
+        }
+        .footer-links a
+        {
+          color:#737373
+        }
+        .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links.inline li
+        {
+          display:inline-block
+        }
+        .site-footer .social-icons
+        {
+          text-align:right
+        }
+        .site-footer .social-icons a
+        {
+          width:40px;
+          height:40px;
+          line-height:40px;
+          margin-left:6px;
+          margin-right:0;
+          border-radius:100%;
+          background-color:#33353d
+        }
+        .copyright-text
+        {
+          margin:0
+        }
+        @media (max-width:991px)
+        {
+          .site-footer [class^=col-]
+          {
+            margin-bottom:30px
+          }
+        }
+        @media (max-width:767px)
+        {
+          .site-footer
+          {
+            padding-bottom:0
+          }
+          .site-footer .copyright-text,.site-footer .social-icons
+          {
+            text-align:center
+          }
+        }
+        .social-icons
+        {
+          padding-left:0;
+          margin-bottom:0;
+          list-style:none
+        }
+        .social-icons li
+        {
+          display:inline-block;
+          margin-bottom:4px
+        }
+        .social-icons li.title
+        {
+          margin-right:15px;
+          text-transform:uppercase;
+          color:#96a2b2;
+          font-weight:700;
+          font-size:13px
+        }
+        .social-icons a{
+          background-color:#eceeef;
+          color:#818a91;
+          font-size:16px;
+          display:inline-block;
+          line-height:44px;
+          width:44px;
+          height:44px;
+          text-align:center;
+          margin-right:8px;
+          border-radius:100%;
+          -webkit-transition:all .2s linear;
+          -o-transition:all .2s linear;
+          transition:all .2s linear
+        }
+        .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+        {
+          color:#fff;
+          background-color:#29aafe
+        }
+        .social-icons.size-sm a
+        {
+          line-height:34px;
+          height:34px;
+          width:34px;
+          font-size:14px
+        }
+        .social-icons a.facebook:hover
+        {
+          background-color:#3b5998
+        }
+        .social-icons a.twitter:hover
+        {
+          background-color:#00aced
+        }
+        .social-icons a.linkedin:hover
+        {
+          background-color:#007bb6
+        }
+        .social-icons a.dribbble:hover
+        {
+          background-color:#ea4c89
+        }
+        @media (max-width:767px)
+        {
+          .social-icons li.title
+          {
+            display:block;
+            margin-right:0;
+            font-weight:600
+          }
+        }
+
+    /* Style the form element with a border around it */
+    .subscribe-form * {
+        font-size: 16px;
+    }
+    .subscribe-form h2 {
+        font-size: 24px;
+    }
+    .subscribe-form {
+      width: 100%;
+      border: 4px solid #f1f1f1;
+    }
+    @media (min-width:891px)
+    {
+        .subscribe-form {
+          width: 300%;
+          border: 4px solid #f1f1f1;
+        }
+    }
+
+    /* Add some padding and a grey background color to containers */
+    .form-container {
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Add margins to the checkbox */
+    input[type=checkbox] {
+      margin-top: 16px;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+    </style>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/style.css}}">
+<title>Publications — pret-a-llod</title>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="../../../">
+          <img src="/static/img.jpg" alt="logo" style="height:100px">
+      </a>
+      
+      <!-- Links -->
+      <ul class="nav navbar-nav navbar-right">
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../../partners/">Partners</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../../projects/">Projects</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../">Publications</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../../about/">About</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../../blog/">Blog</a>
+          </li>
+        
+        <a class="nav-link" href="../../../">Main Page</a>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  
+    <div class="container">
+       <div class="row">
+        <div class="content jumbotron col-9">
+        
+  
+  <head>
+<style>
+      .pagination a {
+        margin-right: 0.5vw;
+        margin-bottom: 1vh;
+      }
+    </style>
+  </head>
+  <div class="pagination">
+    
+      <a class="btn btn-outline-primary" href="../2/">&laquo; Previous</a>
+    
+
+      <a class="btn btn-outline-secondary" href="#"> 3 </a>
+    
+      <a class="btn btn-outline-primary" href="../4/">Next &raquo;</a>
+    
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3886952">Adding Pronunciation Information to Wordnets</a></h2>
+  
+  <p class="meta">
+    written by
+      Declerck, Thierry, Bajcetic, Lenka, Siegel, Melanie
+    on 2020-06-09
+  </p>
+  
+      We describe ongoing work consisting in adding pronunciation information to wordnets, as such information can indicate specific senses of a word. Many wordnets associate with their senses only a lemma form and a part-of-speech tag. At the same time, we are aware that additional linguistic information
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842627">A Comparative Study of Different State-of-the-Art Hate Speech Detection Methods in Hindi-English Code-Mixed Data</a></h2>
+  
+  <p class="meta">
+    written by
+      Priya Rani, Shardul Suryawanshi, Koustava Goswami, Bharathi Raja Chakravarthi, Theodorus Fransen, John Philip McCrae
+    on 2020-05-25
+  </p>
+  
+      Hate speech detection in social media communication has become one of the primary concerns to avoid conflicts and curb undesired activities. In an environment where multilingual speakers switch among multiple languages, hate speech detection becomes a challenging task using methods that are designed
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842631">A Dataset for Classification of Tamil Memes</a></h2>
+  
+  <p class="meta">
+    written by
+      Shardul Suryawanshi, Bharathi Raja Chakravarthi, Pranav Verma, Mihael Arcan, John Philip McCrae, Paul Buitelaar
+    on 2020-05-25
+  </p>
+  
+      Social media are interactive platforms that facilitate the creation or sharing of information, ideas or other forms of expression among people. This exchange is not free from offensive, trolling or malicious contents targeting users or communities. One way of trolling is by making memes, which in mo
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842639">A Sentiment Analysis Dataset for Code-Mixed Malayalam-English</a></h2>
+  
+  <p class="meta">
+    written by
+      Bharathi Raja Chakravarthi, Navya Jose, Shardul Suryawanshi, Elizabeth Sherly, John Philip McCrae
+    on 2020-05-25
+  </p>
+  
+      There is an increasing demand for sentiment analysis of text from social media which are mostly code-mixed. Systems trained on monolingual data fail for code-mixed data due to the complexity of mixing at different levels of the text. However, very few resources are available for code-mixed data to c
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842641">Corpus Creation for Sentiment Analysis in Code-Mixed Tamil-English Text</a></h2>
+  
+  <p class="meta">
+    written by
+      Bharathi Raja Chakravarthi, Vigneshwaran Muralidaran, Ruba Priyadharshini, John Philip McCrae
+    on 2020-05-25
+  </p>
+  
+      Understanding the sentiment of a comment from a video or an image is an essential task in many applications. Sentiment analysis of a text can be useful for various decision-making processes. One such application is to analyse the popular sentiments of videos on social media based on viewer comments.
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842643">Figure Me Out: A Gold Standard Dataset for Metaphor Interpretation</a></h2>
+  
+  <p class="meta">
+    written by
+      Omnia Zayed, John P. McCrae, Paul Buitelaar
+    on 2020-05-25
+  </p>
+  
+      Metaphor comprehension and understanding is a complex cognitive task that requires interpreting metaphors by grasping the interaction between the meaning of their target and source concepts. This is very challenging for humans, let alone computers. Thus, automatic metaphor interpretation is understu
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842633">Modelling Frequency and Attestations for OntoLex-Lemon</a></h2>
+  
+  <p class="meta">
+    written by
+      Christian Chiarcos, Maxim Ionov, Jesse de Does, Katrien Depuydt, Anas Fahad Khan, Sander Stolk, Thierry Declerck, John Philip McCrae
+    on 2020-05-25
+  </p>
+  
+      The OntoLex vocabulary enjoys increasing popularity as a means of publishing lexical resources with RDF and as Linked Data. The recent publication of a new OntoLex module for lexicography, lexicog, reflects its increasing importance for digital lexicography. However, not all aspects of digital lexic
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842625">NUIG at TIAD: Combining Unsupervised NLP and Graph Metrics for Translation Inference</a></h2>
+  
+  <p class="meta">
+    written by
+      John P. McCrae, Mihael Arcan
+    on 2020-05-25
+  </p>
+  
+      In this paper, we present the NUIG system at the TIAD shared task. This system includes graph-based metrics calculated using novel algorithms, with an unsupervised document embedding tool called ONETA and an unsupervised multi-way neural machine translation method. The results are an improvement ove
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842623">On the Linguistic Linked Open Data Infrastructure</a></h2>
+  
+  <p class="meta">
+    written by
+      Christian Chiarcos, Bettina Klimek, Christian Fäth, Thierry Declerck, John P. McCrae
+    on 2020-05-25
+  </p>
+  
+      In this paper we describe the current state of development of the Linguistic Linked Open Data (LLOD) infrastructure, an LOD (sub-)cloud of linguistic resources, which covers various linguistic data bases, lexicons, corpora, terminology and metadata repositories. We give in some details an overview o
+  
+  </div>
+
+  
+    
+  <div class="blog-post">
+  
+    <h2><a href="https://zenodo.org/record/3842629">Towards an Interoperable Ecosystem of AI and LT Platforms: A Roadmap for the Implementation of Different Levels of Interoperability</a></h2>
+  
+  <p class="meta">
+    written by
+      Georg Rehm, Dimitris Galanis, Penny Labropoulou, Stelios Piperidis, Martin Welß, Ricardo Usbeck, Joachim Köhler, Miltos Deligiannis, Katerina Gkirtzou, Johannes Fischer, Christian Chiarcos, Nils Feldhus, Julian Moreno-Schneider, Florian Kintzel, Elena Montiel-Ponsoda, Víctor Rodriguez-Doncel, John Philip McCrae, David Laqua, Irina Patricia Theile, Christian Dittmar, Kalina Bontcheva, Ian Roberts, Andrejs Vasiļjevs, Andis Lagzdins
+    on 2020-05-25
+  </p>
+  
+      With regard to the wider area of AI/LT platform interoperability, we concentrate on two core aspects: (1) cross-platform search and discovery of resources and services; (2) composition of cross-platform service workflows. We devise five different levels (of increasing complexity) of platform interop
+  
+  </div>
+
+  
+
+  
+  <head>
+<style>
+      .pagination a {
+        margin-right: 0.5vw;
+        margin-bottom: 1vh;
+      }
+    </style>
+  </head>
+  <div class="pagination">
+    
+      <a class="btn btn-outline-primary" href="../2/">&laquo; Previous</a>
+    
+
+      <a class="btn btn-outline-secondary" href="#"> 3 </a>
+    
+      <a class="btn btn-outline-primary" href="../4/">Next &raquo;</a>
+    
+  </div>
+
+
+        </div>
+        <div class="col-2" id="sidebar">
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+            <form action="https://insight-centre.us7.list-manage.com/subscribe/post?u=c879d72e28639387e03d22173&amp;id=d45bae296f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c879d72e28639387e03d22173_d45bae296f" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+            <a class="twitter-timeline" data-width="420" data-height="500" href="https://twitter.com/pret_a_llod?ref_src=twsrc%5Etfw">Tweets by pret_a_llod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+       </div>
+    </div>
+
+
+
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h6>Partners</h6>
+            <a href="https://www.uni-bielefeld.de/"><img src="/static/bielefeld-logo-600x220.jpg" alt="Bielefeld University" style="height:50px"></a>
+            <a href="https://derilinx.com/"><img src="/static/Derilinx-Logo-600x220.jpg" alt="Derilinx" style="height:50px"></a>
+            <a href="https://www.dfki.de/web/"><img src="/static/DFKI-logo-600x220.jpg" alt="DFKI GmbH" style="height:50px"></a>
+            <a href="https://www.goethe-university-frankfurt.de/en?locale=en"><img src="/static/Goethe-University-Frankfurt-logo-600x220.jpg" alt="Goethe University Frankfurt" style="height:50px"></a>
+            <a href="http://www.nuigalway.ie/"><img src="/static/NUIG-logo-600x220.jpg" alt="NUI Galway" style="height:50px"></a>
+            <a href="https://global.oup.com/"><img src="/static/OUP-logo-600x220.jpg" alt="Oxford University Press" style="height:50px"></a>
+            <a href="https://www.semalytix.com/"><img src="/static/symalytics-logo-1-600x220.jpg" alt="Semalytix" style="height:50px"></a>
+            <a href="https://www.unizar.es/"><img src="/static/universidad-de-zaragoza-logo-600x220.jpg" alt="University of Zaragoza" style="height:50px"></a>
+            <a href="https://www.upm.es/"><img src="/static/UPM-logo-600x220.jpg" alt="Polytechnic University of Madrid" style="height:50px"></a>
+            <a href="https://semantic-web.com/"><img src="/static/swc-logo-600x220.jpg" alt="Semantic Web Company" style="height:50px"></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img src="/static/horizon2020-eu-commission-logo-200.png" alt="Horizon 2020">
+            <p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 825182.</p>
+          </div>
+
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Pr&ecirc;t-&agrave;-LLOD Project</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>

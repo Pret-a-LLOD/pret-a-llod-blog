@@ -1,0 +1,10 @@
+pub_date:2020-12-18
+---
+title:CoNLL-RDF ontology
+---
+summary:The CoNLL-RDF ontology provides machine-readable semantics for an inventory of CoNLL properties (and classes) for a growing collection of about two dozen CoNLL and related formats currently used in language technology.
+---
+author:Christian
+---
+zenodo:https://zenodo.org/record/4361476
+---

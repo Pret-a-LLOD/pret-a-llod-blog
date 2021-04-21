@@ -1,0 +1,403 @@
+<!doctype html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W97M9NLV1S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W97M9NLV1S');
+    </script>
+    <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="">
+    <style>
+        .twitter-timeline {
+            width: 100vw !important;
+        }
+        img {
+            max-width: 100%;
+        }
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        .content {
+            margin-left: 5px;
+            height: fit-content;
+        }
+        @media (min-width:891px)
+        {
+            .content {
+                margin-left: -15px;
+                height: fit-content;
+            }
+        }
+        .navbar .nav-link:hover {
+          border-bottom: 3px solid red;
+          color: red;
+        }
+        .navbar a {
+          text-transform:capitalize;
+          color: #333;
+        }
+        .navbar {
+          border-bottom: 1px dashed #aaa;
+          border-top: 1px dashed #aaa;
+          margin: 5px;
+        }
+        #formcontainer {
+                text-align: left;
+                margin-left: 0px;
+        }
+         #sidebar {
+            width: 20%;
+            display: block;
+         }
+
+        footer img {
+            margin-top: 2px;
+        }
+        .site-footer
+        {
+          border-top: 1px dashed #aaa;
+          padding:10px 0 10px;
+          font-size:15px;
+          line-height:24px;
+          color:#737373;
+        }
+        .site-footer hr
+        {
+          border-top-color:#bbb;
+          opacity:0.5
+        }
+        .site-footer h6
+        {
+          color:#fff;
+          font-size:16px;
+          text-transform:uppercase;
+          margin-top:5px;
+          letter-spacing:2px
+        }
+        .site-footer a
+        {
+          color:#737373;
+        }
+        .site-footer a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links
+        {
+          padding-left:0;
+          list-style:none
+        }
+        .footer-links li
+        {
+          display:block
+        }
+        .footer-links a
+        {
+          color:#737373
+        }
+        .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links.inline li
+        {
+          display:inline-block
+        }
+        .site-footer .social-icons
+        {
+          text-align:right
+        }
+        .site-footer .social-icons a
+        {
+          width:40px;
+          height:40px;
+          line-height:40px;
+          margin-left:6px;
+          margin-right:0;
+          border-radius:100%;
+          background-color:#33353d
+        }
+        .copyright-text
+        {
+          margin:0
+        }
+        @media (max-width:991px)
+        {
+          .site-footer [class^=col-]
+          {
+            margin-bottom:30px
+          }
+        }
+        @media (max-width:767px)
+        {
+          .site-footer
+          {
+            padding-bottom:0
+          }
+          .site-footer .copyright-text,.site-footer .social-icons
+          {
+            text-align:center
+          }
+        }
+        .social-icons
+        {
+          padding-left:0;
+          margin-bottom:0;
+          list-style:none
+        }
+        .social-icons li
+        {
+          display:inline-block;
+          margin-bottom:4px
+        }
+        .social-icons li.title
+        {
+          margin-right:15px;
+          text-transform:uppercase;
+          color:#96a2b2;
+          font-weight:700;
+          font-size:13px
+        }
+        .social-icons a{
+          background-color:#eceeef;
+          color:#818a91;
+          font-size:16px;
+          display:inline-block;
+          line-height:44px;
+          width:44px;
+          height:44px;
+          text-align:center;
+          margin-right:8px;
+          border-radius:100%;
+          -webkit-transition:all .2s linear;
+          -o-transition:all .2s linear;
+          transition:all .2s linear
+        }
+        .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+        {
+          color:#fff;
+          background-color:#29aafe
+        }
+        .social-icons.size-sm a
+        {
+          line-height:34px;
+          height:34px;
+          width:34px;
+          font-size:14px
+        }
+        .social-icons a.facebook:hover
+        {
+          background-color:#3b5998
+        }
+        .social-icons a.twitter:hover
+        {
+          background-color:#00aced
+        }
+        .social-icons a.linkedin:hover
+        {
+          background-color:#007bb6
+        }
+        .social-icons a.dribbble:hover
+        {
+          background-color:#ea4c89
+        }
+        @media (max-width:767px)
+        {
+          .social-icons li.title
+          {
+            display:block;
+            margin-right:0;
+            font-weight:600
+          }
+        }
+
+    /* Style the form element with a border around it */
+    .subscribe-form * {
+        font-size: 16px;
+    }
+    .subscribe-form h2 {
+        font-size: 24px;
+    }
+    .subscribe-form {
+      width: 100%;
+      border: 4px solid #f1f1f1;
+    }
+    @media (min-width:891px)
+    {
+        .subscribe-form {
+          width: 300%;
+          border: 4px solid #f1f1f1;
+        }
+    }
+
+    /* Add some padding and a grey background color to containers */
+    .form-container {
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Add margins to the checkbox */
+    input[type=checkbox] {
+      margin-top: 16px;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+    </style>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/style.css}}">
+<title>Recording of Derilinx&#39;s webinar on &#34;Kweery&#34;, a solution for improved cross-border citizens engagement. — pret-a-llod</title>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="../../">
+          <img src="/static/img.jpg" alt="logo" style="height:100px">
+      </a>
+      
+      <!-- Links -->
+      <ul class="nav navbar-nav navbar-right">
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../partners/">Partners</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../">Projects</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../publications/">Publications</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../about/">About</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../blog/">Blog</a>
+          </li>
+        
+        <a class="nav-link" href="../../">Main Page</a>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  
+    <div class="container">
+       <div class="row">
+        <div class="content jumbotron col-9">
+        
+  <h2>Recording of Derilinx&#39;s webinar on &#34;Kweery&#34;, a solution for improved cross-border citizens engagement.</h2>
+  <p><img src="logo-cut-final-600x220.png" alt=""></p>
+<h1>Prêt-à-LLOD: Derilinx Kweery, a solution for improved cross-border citizens engagement.</h1>
+<p>More and more jurisdictions in Europe and indeed the World are in the process of building  Open Data portals that support transparency and enable access to key information on Public Services. Linkages between these portals, particularly across multiple languages and jurisdictions are for the most part still to be built.</p>
+<p>Intuitive data access and multi-lingual access to information often fall short to support citizens/decision-makers that do not master a particular language. This has a direct impact on the ability to follow local regulations and increase workload for public Customer Services Teams.</p>
+<p>Derilinx, as a partner in EU Funded project Pret-a-llod, is in the process of finalizing Kweery, a semantic solution for improved cross-border citizens engagement, that enables users to explore in an intuitive way open data content. It is built using advanced multilingual text analytics techniques and Natural Language Process Techniques.</p>
+<p>Derilinx gave a demonstration of Kweery in this webinar.</p>
+<p>You can view the webinar <a href="https://attendee.gotowebinar.com/recording/8707938989000681227">here</a>.</p>
+<p><img src="derilinx-kweery-invitation.jpeg" alt=""></p>
+
+
+        </div>
+        <div class="col-2" id="sidebar">
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+            <form action="https://insight-centre.us7.list-manage.com/subscribe/post?u=c879d72e28639387e03d22173&amp;id=d45bae296f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c879d72e28639387e03d22173_d45bae296f" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+            <a class="twitter-timeline" data-width="420" data-height="500" href="https://twitter.com/pret_a_llod?ref_src=twsrc%5Etfw">Tweets by pret_a_llod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+       </div>
+    </div>
+
+
+
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h6>Partners</h6>
+            <a href="https://www.uni-bielefeld.de/"><img src="/static/bielefeld-logo-600x220.jpg" alt="Bielefeld University" style="height:50px"></a>
+            <a href="https://derilinx.com/"><img src="/static/Derilinx-Logo-600x220.jpg" alt="Derilinx" style="height:50px"></a>
+            <a href="https://www.dfki.de/web/"><img src="/static/DFKI-logo-600x220.jpg" alt="DFKI GmbH" style="height:50px"></a>
+            <a href="https://www.goethe-university-frankfurt.de/en?locale=en"><img src="/static/Goethe-University-Frankfurt-logo-600x220.jpg" alt="Goethe University Frankfurt" style="height:50px"></a>
+            <a href="http://www.nuigalway.ie/"><img src="/static/NUIG-logo-600x220.jpg" alt="NUI Galway" style="height:50px"></a>
+            <a href="https://global.oup.com/"><img src="/static/OUP-logo-600x220.jpg" alt="Oxford University Press" style="height:50px"></a>
+            <a href="https://www.semalytix.com/"><img src="/static/symalytics-logo-1-600x220.jpg" alt="Semalytix" style="height:50px"></a>
+            <a href="https://www.unizar.es/"><img src="/static/universidad-de-zaragoza-logo-600x220.jpg" alt="University of Zaragoza" style="height:50px"></a>
+            <a href="https://www.upm.es/"><img src="/static/UPM-logo-600x220.jpg" alt="Polytechnic University of Madrid" style="height:50px"></a>
+            <a href="https://semantic-web.com/"><img src="/static/swc-logo-600x220.jpg" alt="Semantic Web Company" style="height:50px"></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img src="/static/horizon2020-eu-commission-logo-200.png" alt="Horizon 2020">
+            <p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 825182.</p>
+          </div>
+
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Pr&ecirc;t-&agrave;-LLOD Project</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>

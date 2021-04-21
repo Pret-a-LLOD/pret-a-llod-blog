@@ -1,0 +1,10 @@
+pub_date:2020-12-21
+---
+title:Bilingual Lexicon Induction across Orthographically-distinct Under-Resourced Dravidian Languages
+---
+summary:Bilingual lexicons are a vital tool for under-resourced languages and recent state-of-the-art approaches to this leverage pretrained monolingual word embeddings using supervised or semi-supervised approaches. However, these approaches require cross-lingual information such as seed dictionaries to tr
+---
+author:Bharathi Raja Chakravarthi, Navaneethan Rajasekaran, Mihael Arcan, Kevin McGuinness, Noel E. O'Connor, John P. McCrae
+---
+zenodo:https://zenodo.org/record/4320725
+---

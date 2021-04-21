@@ -1,0 +1,10 @@
+pub_date:2020-05-25
+---
+title:NUIG at TIAD: Combining Unsupervised NLP and Graph Metrics for Translation Inference
+---
+summary:In this paper, we present the NUIG system at the TIAD shared task. This system includes graph-based metrics calculated using novel algorithms, with an unsupervised document embedding tool called ONETA and an unsupervised multi-way neural machine translation method. The results are an improvement ove
+---
+author:John P. McCrae, Mihael Arcan
+---
+zenodo:https://zenodo.org/record/3842625
+---

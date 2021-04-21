@@ -1,0 +1,503 @@
+<!doctype html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W97M9NLV1S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W97M9NLV1S');
+    </script>
+    <link rel="stylesheet" href="/static/bootstrap.min.css" integrity="">
+    <style>
+        .twitter-timeline {
+            width: 100vw !important;
+        }
+        img {
+            max-width: 100%;
+        }
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+        .content {
+            margin-left: 5px;
+            height: fit-content;
+        }
+        @media (min-width:891px)
+        {
+            .content {
+                margin-left: -15px;
+                height: fit-content;
+            }
+        }
+        .navbar .nav-link:hover {
+          border-bottom: 3px solid red;
+          color: red;
+        }
+        .navbar a {
+          text-transform:capitalize;
+          color: #333;
+        }
+        .navbar {
+          border-bottom: 1px dashed #aaa;
+          border-top: 1px dashed #aaa;
+          margin: 5px;
+        }
+        #formcontainer {
+                text-align: left;
+                margin-left: 0px;
+        }
+         #sidebar {
+            width: 20%;
+            display: block;
+         }
+
+        footer img {
+            margin-top: 2px;
+        }
+        .site-footer
+        {
+          border-top: 1px dashed #aaa;
+          padding:10px 0 10px;
+          font-size:15px;
+          line-height:24px;
+          color:#737373;
+        }
+        .site-footer hr
+        {
+          border-top-color:#bbb;
+          opacity:0.5
+        }
+        .site-footer h6
+        {
+          color:#fff;
+          font-size:16px;
+          text-transform:uppercase;
+          margin-top:5px;
+          letter-spacing:2px
+        }
+        .site-footer a
+        {
+          color:#737373;
+        }
+        .site-footer a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links
+        {
+          padding-left:0;
+          list-style:none
+        }
+        .footer-links li
+        {
+          display:block
+        }
+        .footer-links a
+        {
+          color:#737373
+        }
+        .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+        {
+          color:#3366cc;
+          text-decoration:none;
+        }
+        .footer-links.inline li
+        {
+          display:inline-block
+        }
+        .site-footer .social-icons
+        {
+          text-align:right
+        }
+        .site-footer .social-icons a
+        {
+          width:40px;
+          height:40px;
+          line-height:40px;
+          margin-left:6px;
+          margin-right:0;
+          border-radius:100%;
+          background-color:#33353d
+        }
+        .copyright-text
+        {
+          margin:0
+        }
+        @media (max-width:991px)
+        {
+          .site-footer [class^=col-]
+          {
+            margin-bottom:30px
+          }
+        }
+        @media (max-width:767px)
+        {
+          .site-footer
+          {
+            padding-bottom:0
+          }
+          .site-footer .copyright-text,.site-footer .social-icons
+          {
+            text-align:center
+          }
+        }
+        .social-icons
+        {
+          padding-left:0;
+          margin-bottom:0;
+          list-style:none
+        }
+        .social-icons li
+        {
+          display:inline-block;
+          margin-bottom:4px
+        }
+        .social-icons li.title
+        {
+          margin-right:15px;
+          text-transform:uppercase;
+          color:#96a2b2;
+          font-weight:700;
+          font-size:13px
+        }
+        .social-icons a{
+          background-color:#eceeef;
+          color:#818a91;
+          font-size:16px;
+          display:inline-block;
+          line-height:44px;
+          width:44px;
+          height:44px;
+          text-align:center;
+          margin-right:8px;
+          border-radius:100%;
+          -webkit-transition:all .2s linear;
+          -o-transition:all .2s linear;
+          transition:all .2s linear
+        }
+        .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+        {
+          color:#fff;
+          background-color:#29aafe
+        }
+        .social-icons.size-sm a
+        {
+          line-height:34px;
+          height:34px;
+          width:34px;
+          font-size:14px
+        }
+        .social-icons a.facebook:hover
+        {
+          background-color:#3b5998
+        }
+        .social-icons a.twitter:hover
+        {
+          background-color:#00aced
+        }
+        .social-icons a.linkedin:hover
+        {
+          background-color:#007bb6
+        }
+        .social-icons a.dribbble:hover
+        {
+          background-color:#ea4c89
+        }
+        @media (max-width:767px)
+        {
+          .social-icons li.title
+          {
+            display:block;
+            margin-right:0;
+            font-weight:600
+          }
+        }
+
+    /* Style the form element with a border around it */
+    .subscribe-form * {
+        font-size: 16px;
+    }
+    .subscribe-form h2 {
+        font-size: 24px;
+    }
+    .subscribe-form {
+      width: 100%;
+      border: 4px solid #f1f1f1;
+    }
+    @media (min-width:891px)
+    {
+        .subscribe-form {
+          width: 300%;
+          border: 4px solid #f1f1f1;
+        }
+    }
+
+    /* Add some padding and a grey background color to containers */
+    .form-container {
+      padding: 10px;
+      background-color: #f1f1f1;
+    }
+
+    /* Style the input elements and the submit button */
+    input[type=text], input[type=submit] {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    /* Add margins to the checkbox */
+    input[type=checkbox] {
+      margin-top: 16px;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+
+    input[type=submit]:hover {
+      opacity: 0.8;
+    }
+    </style>
+</head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="/static/style.css}}">
+<title>Why do we need this project when we have tools from Google etc? — pret-a-llod</title>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-sm">
+      <div class="container-fluid">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="../../">
+          <img src="/static/img.jpg" alt="logo" style="height:100px">
+      </a>
+      
+      <!-- Links -->
+      <ul class="nav navbar-nav navbar-right">
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../partners/">Partners</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../">Projects</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../publications/">Publications</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../about/">About</a>
+          </li>
+                
+          <li class="nav-item">
+                  <a class="nav-link" href="../../blog/">Blog</a>
+          </li>
+        
+        <a class="nav-link" href="../../">Main Page</a>
+      </ul>
+      </div>
+    </nav>
+  </header>
+  
+    <div class="container">
+       <div class="row">
+        <div class="content jumbotron col-9">
+        
+  <h2>Why do we need this project when we have tools from Google etc?</h2>
+  <p>Citizens and businesses of different nationalities often face barriers
+when using digital tools and services. Consumers have restricted access
+in some cases, and governments and citizens cannot fully benefit from
+this digital transformation. The solution is the <a href="https://en.wikipedia.org/wiki/Digital_Single_Market">digital single
+market</a>, as it
+removes key differences, breaking down the barriers to cross-border
+online activity and providing
+<a href="https://en.wikipedia.org/wiki/Multilingualism">multilingual</a>
+resources. </p>
+<p>A coordinated, complementary, cross-border, and multilingual single
+solution approach can play an important role not only in the digital
+single market but also in disaster management. For example, the European
+Union developed a common approach for efficient <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_20_670">contact tracing
+apps</a>
+to support the gradual lifting of confinement measures as a response to
+the <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">Covid-19
+pandemic</a>. Europes data
+protection watchdog has called for a single coronavirus app to be used
+across the multilingual EU nations, instead of every country making its
+own. </p>
+<p>The existing Google and <a href="https://en.wikipedia.org/wiki/Natural_language_processing">Natural Language
+Processing</a>
+(NLP) tools have several disadvantages over creating a digital single
+market and well-coordinated multilingual solutions.
+<a href="https://www.pret-a-llod.eu/tools-and-services/">Prêt-à-LLOD</a> tools, on
+the other hand, utilize linked open data and language technologies to
+create multilingual and cross-border applications.</p>
+<p><strong>Why Prêt-à-LLOD tools?</strong></p>
+<p><strong>Interlinked and interoperable information</strong></p>
+<p>Google and Facebook provide very comfortable environments, precise
+search results, autocomplete text boxes etc., but these tools are
+developed on traditional databases (such as BI-tools, search engines,
+etc) and these databases are not interlinked, although they are highly
+related to each other. </p>
+<p>For example, if a user wants to know about <em>Barack Obama</em> and searches
+in Google tools, the results are obtained from the entire Internet as a
+supplementary source. The results are merged, ranked and presented to
+the user. To get more detail of personal information (such as birth date
+and place, education, family, etc.) of <em>Barack Obama</em> and related
+information (such as a predecessor, African American leaders, White
+House, etc) users have to go through many documents and browse them.</p>
+<p><img src="Obama-1024x551.png" alt="obama"></p>
+<p>In google search, when searching <em>Barack Obama</em> a user has to go through
+many documents to get related information (such as a predecessor, white
+house,  etc).</p>
+<p>On the other hand, if the data were stored or internally published as
+Linked Data (as in the Prêt-à-LLOD linked data approach), the result
+will expose all this personal information and also a list of related
+entities, which are semantically interrelated to the users search query.
+Exchangeability, interoperability, transformation, and linking are the
+key to the development of linked data applications.</p>
+<p><a href="https://www.pret-a-llod.eu/software-and-resource-descriptions/">Prêt-à-LLOD provides several supporting
+tools</a>
+to develop linked data applications. They are:</p>
+<ul>
+<li>A management tool for transforming, manipulating, enriching or
+creating language resources. The tool converts data from any text
+format to linked data format (i.e. <a href="https://www.w3.org/RDF/">RDF</a>)
+and ensures exchangeability and interoperability among databases and
+services.</li>
+<li>Linking components to link databases and resources by linking a term
+to another term (i.e apple is linked to orange), a term to a concept
+(i.e. apple to linked to fruit), and a concept to another concept of
+a knowledge base (i.e. <a href="https://wiki.dbpedia.org/">DBpedia</a>).</li>
+</ul>
+<p><img src="../static/Obama-Bush-613x1024.png" alt=""></p>
+<p>An <a href="https://doi.org/10.1007/s11042-011-0733-1">application</a> developed on
+linked data, the search result can provide a list of related entities,
+which are interrelated to the users search query. As can be seen from
+the figure, Barack Obama is linked with George W. Bush.</p>
+<p><strong>Multilingual information and complex translation</strong>: </p>
+<p>Most of these NLP tools are developed without considering their usage in
+multilingual settings. Although Google Translate can be a lifesaver when
+we need to translate simple text (such as a menu in a foreign language),
+when translating financial reports, educational materials,
+health-related documents, pharmaceutical drug trials, Google Translate
+is unlikely to interpret original ideas and provide an accurate
+translation. </p>
+<p>The Prêt-à-LLOD tools provide a multilingual cross-repository data
+search facility, covering major dataset sources across Europe and the
+world. Through these tools, terms (or pieces of text) are exposed as
+multilingual data (translations, definitions, synonyms and other
+terminological data). Therefore, users can navigate from one translation
+to the other in a specific language by simply clicking the information.
+ </p>
+<p><strong>Cross-border information access and licensing</strong>: </p>
+<p>The Google translation service platforms are not ideal where
+confidential documents are involved. Some companies have found that
+their <a href="https://qz.com/1075524/if-you-value-your-privacy-be-careful-with-online-translation-tools/">confidential data was published
+online</a>
+after they had used online translation tools to translate company data. </p>
+<p>Prêt-à-LLOD provides new models and mechanisms for ensuring the ​
+validity​, ​ maintainability and ​ licensing of language resources and
+tools to deduce the possible licenses of a resource.</p>
+<p><strong>Literature links:</strong></p>
+<ul>
+<li>Waitelonis, J., Sack, H. Towards exploratory video search using
+linked data. <em>Multimed Tools Appl</em> 59, 645–672 (2012).
+[[<a href="https://doi.org/10.1007/s11042-011-0733-1](https://doi.org/10.1007/s11042-011-0733-1)\">https://doi.org/10.1007/s11042-011-0733-1](https://doi.org/10.1007/s11042-011-0733-1)\</a>]</li>
+</ul>
+<!-- -->
+
+<ul>
+<li>Thierry Declerck, John McCrae, Matthias Hartung et al. (2020):
+Recent Developments for the Linguistic Linked Open Data
+Infrastructure. LREC 2020.
+[<a href="https://zenodo.org/record/3736949#.Xq_xZC_37OQ">https://doi.org/10.5281/zenodo.3736949</a>]</li>
+</ul>
+
+
+        </div>
+        <div class="col-2" id="sidebar">
+            <!-- Begin Mailchimp Signup Form -->
+            <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+                /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+            </style>
+            <div id="mc_embed_signup">
+            <form action="https://insight-centre.us7.list-manage.com/subscribe/post?u=c879d72e28639387e03d22173&amp;id=d45bae296f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <h2>Subscribe</h2>
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email Address </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c879d72e28639387e03d22173_d45bae296f" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+            <!--End mc_embed_signup-->
+
+            <a class="twitter-timeline" data-width="420" data-height="500" href="https://twitter.com/pret_a_llod?ref_src=twsrc%5Etfw">Tweets by pret_a_llod</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+       </div>
+    </div>
+
+
+
+
+<footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-8">
+            <h6>Partners</h6>
+            <a href="https://www.uni-bielefeld.de/"><img src="/static/bielefeld-logo-600x220.jpg" alt="Bielefeld University" style="height:50px"></a>
+            <a href="https://derilinx.com/"><img src="/static/Derilinx-Logo-600x220.jpg" alt="Derilinx" style="height:50px"></a>
+            <a href="https://www.dfki.de/web/"><img src="/static/DFKI-logo-600x220.jpg" alt="DFKI GmbH" style="height:50px"></a>
+            <a href="https://www.goethe-university-frankfurt.de/en?locale=en"><img src="/static/Goethe-University-Frankfurt-logo-600x220.jpg" alt="Goethe University Frankfurt" style="height:50px"></a>
+            <a href="http://www.nuigalway.ie/"><img src="/static/NUIG-logo-600x220.jpg" alt="NUI Galway" style="height:50px"></a>
+            <a href="https://global.oup.com/"><img src="/static/OUP-logo-600x220.jpg" alt="Oxford University Press" style="height:50px"></a>
+            <a href="https://www.semalytix.com/"><img src="/static/symalytics-logo-1-600x220.jpg" alt="Semalytix" style="height:50px"></a>
+            <a href="https://www.unizar.es/"><img src="/static/universidad-de-zaragoza-logo-600x220.jpg" alt="University of Zaragoza" style="height:50px"></a>
+            <a href="https://www.upm.es/"><img src="/static/UPM-logo-600x220.jpg" alt="Polytechnic University of Madrid" style="height:50px"></a>
+            <a href="https://semantic-web.com/"><img src="/static/swc-logo-600x220.jpg" alt="Semantic Web Company" style="height:50px"></a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <img src="/static/horizon2020-eu-commission-logo-200.png" alt="Horizon 2020">
+            <p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 825182.</p>
+          </div>
+
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+         <a href="#">Pr&ecirc;t-&agrave;-LLOD Project</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+</body>

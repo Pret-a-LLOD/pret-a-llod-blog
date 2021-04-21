@@ -1,0 +1,11 @@
+pub_date:2019-08-20
+---
+title:Using OntoLex-Lemon for Representing and Interlinking German Multiword Expressions in OdeNet and MMORPH
+---
+summary:We describe work consisting in porting two large German lexical resources into the OntoLex-Lemon model in order to establish
+complementary interlinkings between them. One resource is OdeNet (Open GermanWord-Net) and the other is a further development of the German version of the MMORPH morphological
+---
+author:Declerck, Thierry, Siegel, Melanie, Racioppa, Stefania
+---
+zenodo:https://zenodo.org/record/3372464
+---

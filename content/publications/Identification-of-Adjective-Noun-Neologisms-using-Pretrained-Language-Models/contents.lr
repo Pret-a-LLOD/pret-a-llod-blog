@@ -1,0 +1,10 @@
+pub_date:2019-08-28
+---
+title:Identification of Adjective-Noun Neologisms using Pretrained Language Models
+---
+summary:Neologism detection is a key task in the constructing of lexical resources and has wider implications for NLP, however the identification of multiword neologisms has received little attention. In this paper, we show that we can effectively identify the distinction between compositional and non-compo
+---
+author:John P. McCrae
+---
+zenodo:https://zenodo.org/record/3379685
+---

@@ -1,0 +1,10 @@
+pub_date:2019-11-27
+---
+title:Translation Inference through Multi-lingual Word Embedding Similarity
+---
+summary:This paper describes our contribution to the Shared Task on Translation Inference across Dictionaries (TIAD-2019). In our approach, we construct a multi-lingual word embedding space by projecting new languages in the feature space of a language for which a pretrained embedding model exists. We use t
+---
+author:Donandt, Kathrin, Chiarcos, Christian
+---
+zenodo:https://zenodo.org/record/3555183
+---

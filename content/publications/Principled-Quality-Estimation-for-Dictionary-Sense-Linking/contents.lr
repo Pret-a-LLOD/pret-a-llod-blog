@@ -1,0 +1,10 @@
+pub_date:2020-09-01
+---
+title:Principled Quality Estimation for Dictionary Sense Linking
+---
+summary:Estimating the quality of lexical data automatically linked on the sense level is challenging, as the quality of the predicted sense links can differ significantly across various datasets. This variability is especially problematic when quality estimation is limited to general statements about an ex
+---
+author:Grosse, Julian, Saurí, Roser
+---
+zenodo:https://zenodo.org/record/4010854
+---
