@@ -1,0 +1,10 @@
+pub_date:2019-08-28
+---
+title:WordNet Gloss Translation for Under-resourced Languages using Multilingual Neural Machine Translation
+---
+summary:In this paper, we translate the glosses in the English WordNet based on the expand approach for improving and generating wordnets with the help of multilingual neural machine translation. Neural Machine Translation (NMT) has recently been applied to many tasks in natural language processing, leading
+---
+author:Bharathi Raja Chakravarthi, Mihael Arcan, John P. McCrae
+---
+zenodo:https://zenodo.org/record/3379681
+---

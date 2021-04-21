@@ -1,0 +1,17 @@
+pub_date:2020-09-01
+---
+title:Ontolex-lemon and TIAD versions of Apertium Afrikaans-Dutch dictionary
+---
+summary:OntoLex-lemon and TSV conversion of Apertium Bidix. For more details, see https://www.aclweb.org/anthology/2020.lrec-1.401/
+
+Authors of the original data:
+
+
+	2008-2018, Francis M. Tyers <ftyers@prompsit.com>
+	2018, Marc Riera Irigoyen <marc.riera.irigoyen@gmail.com>
+	2016, Wolf
+---
+author:Chiarcos, Christian, Ionov, Maxim
+---
+zenodo:https://zenodo.org/record/4010622
+---

@@ -1,0 +1,10 @@
+pub_date:2019-08-28
+---
+title:Adapting Term Recognition to an Under-Resourced Language: the Case of Irish
+---
+summary:Automatic Term Recognition (ATR) is an important method for the summarization and analysis of large corpora, and normally requires a significant amount of linguistic input, in particular the use of part-of-speech taggers. For an under-resourced language such as Irish, the resources necessary for thi
+---
+author:John P. McCrae, Adrian Doyle
+---
+zenodo:https://zenodo.org/record/3379679
+---

@@ -1,0 +1,10 @@
+pub_date:2019-08-28
+---
+title:English WordNet 2019 -- An Open-Source WordNet for English
+---
+summary:We describe the release of a new wordnet for English based on the Princeton WordNet, but now developed under an open-source model. In particular, this version of WordNet, which we call English WordNet 2019, which has been developed by multiple people around the world through GitHub, fixes many error
+---
+author:John P. McCrae, Alexandre Rademaker, Francis Bond, Ewa Rudnicka, Christiane Fellbaum
+---
+zenodo:https://zenodo.org/record/3379701
+---

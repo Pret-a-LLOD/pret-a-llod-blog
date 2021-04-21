@@ -1,0 +1,10 @@
+pub_date:2020-12-15
+---
+title:Leveraging Linguistic Linked Data for Cross-Lingual Model Transfer in the Pharmaceutical Domain
+---
+summary:We describe the use of linguistic linked data to support a cross-lingual transfer framework for sentiment analysis in the pharmaceutical domain. The proposed system dynamically gathers translations from the Linked Open Data (LOD) cloud, particularly from Apertium RDF, in order to project a deep lear
+---
+author:Jorge Gracia, Christian Fäth, Matthias Hartung, Max Ionov, Julia Bosque-Gil, Susana Veríssimo, Christian Chiarcos, Matthias Orlikowski
+---
+zenodo:https://zenodo.org/record/4322607
+---

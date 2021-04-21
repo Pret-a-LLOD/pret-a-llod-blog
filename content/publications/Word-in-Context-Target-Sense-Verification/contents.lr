@@ -1,0 +1,10 @@
+pub_date:2020-08-13
+---
+title:Word-in-Context Target Sense Verification
+---
+summary:Formally, WiC is framed as a binary classification task. Each instance in WiC-TSV consists of a target word w with a corresponding target sense s represented by either its definition (subtask 1) or its hypernym/s (subtask 2), and a context c containing the tar
+---
+author:Anna Breit, Jose Camacho-Collados, Kiamehr Rezaee, Mohammad Taher Pilehvar, Artem Revenko
+---
+zenodo:https://zenodo.org/record/3983593
+---

@@ -1,0 +1,10 @@
+pub_date:2020-05-25
+---
+title:A Sentiment Analysis Dataset for Code-Mixed Malayalam-English
+---
+summary:There is an increasing demand for sentiment analysis of text from social media which are mostly code-mixed. Systems trained on monolingual data fail for code-mixed data due to the complexity of mixing at different levels of the text. However, very few resources are available for code-mixed data to c
+---
+author:Bharathi Raja Chakravarthi, Navya Jose, Shardul Suryawanshi, Elizabeth Sherly, John Philip McCrae
+---
+zenodo:https://zenodo.org/record/3842639
+---

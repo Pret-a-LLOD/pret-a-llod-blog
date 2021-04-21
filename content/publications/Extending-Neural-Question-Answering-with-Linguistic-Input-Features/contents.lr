@@ -1,0 +1,10 @@
+pub_date:2019-08-21
+---
+title:Extending Neural Question Answering with Linguistic Input Features
+---
+summary:Considerable progress in neural question answering has been made on competitive general domain datasets. In order to explore methods to aid the generalization potential of question answering models, we reimplement a state-of-the-art architecture, perform a parameter search on an open-domain dataset 
+---
+author:Hommel, Fabian, Orlikowski, Matthias, Cimiano, Philipp, Hartung, Matthias
+---
+zenodo:https://zenodo.org/record/3373529
+---

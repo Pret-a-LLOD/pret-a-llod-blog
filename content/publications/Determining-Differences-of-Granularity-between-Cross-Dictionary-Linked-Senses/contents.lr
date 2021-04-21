@@ -1,0 +1,10 @@
+pub_date:2020-07-20
+---
+title:Determining Differences of Granularity between Cross-Dictionary Linked Senses
+---
+summary:We present a machine learning model classifying the relation between two linked dictionary senses based on the senses’ granularity. The relations are perfect, narrower/wider, and partial. The model yields an overall accuracy of 86% and significantly outperforms a rule-based algorithm serving a
+---
+author:Kouvara, Eirini, Gonzàlez, Meritxell, Grosse, Julian, Saurí, Roser
+---
+zenodo:https://zenodo.org/record/3952208
+---

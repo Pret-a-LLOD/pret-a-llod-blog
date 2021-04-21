@@ -1,0 +1,10 @@
+pub_date:2020-05-25
+---
+title:Modelling Frequency and Attestations for OntoLex-Lemon
+---
+summary:The OntoLex vocabulary enjoys increasing popularity as a means of publishing lexical resources with RDF and as Linked Data. The recent publication of a new OntoLex module for lexicography, lexicog, reflects its increasing importance for digital lexicography. However, not all aspects of digital lexic
+---
+author:Christian Chiarcos, Maxim Ionov, Jesse de Does, Katrien Depuydt, Anas Fahad Khan, Sander Stolk, Thierry Declerck, John Philip McCrae
+---
+zenodo:https://zenodo.org/record/3842633
+---

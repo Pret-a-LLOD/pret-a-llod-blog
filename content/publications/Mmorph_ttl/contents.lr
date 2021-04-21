@@ -1,0 +1,12 @@
+pub_date:2020-09-01
+---
+title:Mmorph_ttl
+---
+summary:This zip file containes the results of the conversion of Mmorph morphologies into the OntoLex-Lemon model, using the Turtle syntax as the serialization method. 
+
+The content of the file is: 380.405 base forms and 2.534.735 fullforms, covering English, German French, Spanish ,Italian and Du
+---
+author:Racioppa, Stefania, Declerck, Thierry
+---
+zenodo:https://zenodo.org/record/4009277
+---

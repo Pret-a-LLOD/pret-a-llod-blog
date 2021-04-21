@@ -1,0 +1,10 @@
+pub_date:2019-11-27
+---
+title:Automatic Detection of Language and Annotation Model Information in CoNLL Corpora
+---
+summary:We introduce AnnoHub, an on-going effort to automatically complement existing language resources with metadata about the languages they cover and the annotation schemes (tagsets) that they apply, to provide a web interface for their curation and evaluation by means of domain experts, and to publish 
+---
+author:Abromeit, Frank, Chiarcos, Christian
+---
+zenodo:https://zenodo.org/record/3555141
+---

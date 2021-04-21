@@ -1,0 +1,10 @@
+pub_date:2020-06-09
+---
+title:Adding Pronunciation Information to Wordnets
+---
+summary:We describe ongoing work consisting in adding pronunciation information to wordnets, as such information can indicate specific senses of a word. Many wordnets associate with their senses only a lemma form and a part-of-speech tag. At the same time, we are aware that additional linguistic information
+---
+author:Declerck, Thierry, Bajcetic, Lenka, Siegel, Melanie
+---
+zenodo:https://zenodo.org/record/3886952
+---

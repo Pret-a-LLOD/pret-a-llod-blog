@@ -1,0 +1,17 @@
+pub_date:2021-01-07
+---
+title:Lemmatized English Word2Vec data
+---
+summary:# Lemmatized English Word2Vec data
+
+This is a version of the original GoogleNews-vectors-negative300 Word2Vec embeddings for English.
+In addition, we provide the following modified files:
+
+- converted to conventional CSV format (and gzipped)
+- subclassified:
+  for the most frequent 1.000.000 wo
+---
+author:Christian Chiarcos, Tomas Mikolov et al.
+---
+zenodo:https://zenodo.org/record/4421380
+---

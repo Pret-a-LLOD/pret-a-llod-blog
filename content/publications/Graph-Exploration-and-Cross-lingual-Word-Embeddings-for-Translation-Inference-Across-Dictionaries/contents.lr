@@ -1,0 +1,10 @@
+pub_date:2020-06-17
+---
+title:Graph Exploration and Cross-lingual Word Embeddings for Translation Inference Across Dictionaries
+---
+summary:This paper describes the participation of two different approaches in the 3rd Translation Inference Across Dictionaries (TIAD 2020) shared task. The aim of the task is to automatically generate new bilingual dictionaries from existing ones. To that end, we essayed two different types of techniques: 
+---
+author:Marta Lanau-Coronas, Jorge Gracia
+---
+zenodo:https://zenodo.org/record/3898278
+---

@@ -1,0 +1,10 @@
+pub_date:2019-08-28
+---
+title:A Character-Level LSTM Network Model for Tokenizing the Old Irish text of the Würzburg Glosses on the Pauline Epistles
+---
+summary:This paper examines difficulties inherent in tokenization of Early Irish texts and demonstrates that a neural-network-based approach may provide a viable solution for historical texts which contain unconventional spacing and spelling anomalies. Guidelines for tokenizing Old Irish text are presented 
+---
+author:Adrian Doyle, John P. McCrae, Clodagh Downey
+---
+zenodo:https://zenodo.org/record/3379675
+---

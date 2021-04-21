@@ -1,0 +1,10 @@
+pub_date:2021-03-23
+---
+title:A Domain Independent Semantic Measure for Keyword Sense Disambiguation
+---
+summary:Understanding the user's intention is crucial for many tasks that involve human-machine interaction. To that end, word sense disambiguation (WSD) techniques play an important role. WSD techniques typically require well-formed sentences as context to operate, as well as pre-defined catalogues of 
+---
+author:María G. Buey, Carlos Bobed, Jorge Gracia, Eduardo Mena
+---
+zenodo:https://zenodo.org/record/4631685
+---
