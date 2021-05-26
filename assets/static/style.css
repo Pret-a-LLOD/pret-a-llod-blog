@@ -1,0 +1,17 @@
+a {
+    color: #264989;
+}
+
+.blog-post .meta {
+    font-size: 70%;
+    color: #333;
+}
+.blog-post {
+    margin: 40px 0px; 
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.navbar .nav-link {
+    border-bottom: 3px solid transparent;
+}
