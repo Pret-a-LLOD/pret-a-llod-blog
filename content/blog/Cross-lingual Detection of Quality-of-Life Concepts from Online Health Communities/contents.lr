@@ -7,6 +7,7 @@ title: Semalytix Research Paper Accepted at SEMANTiCS 2021 on Cross-lingual Dete
 summary: Linked Linguistic Open Data's role in assessing health-related quality of life
 ---
 body:
+![COVID](./2m-distance.jpg)
 
 ![Patient experience] (https://github.com/Pret-a-LLOD/pret-a-llod.github.io/blob/b5c419b4fac956c75f0b508823c6d4b1838ebff8/content/blog/Cross-lingual%20Detection%20of%20Quality-of-Life%20Concepts%20from%20Online%20Health%20Communities/patientexperience-small.jpg)
 Increasingly, multilingual language resources are available as Linguistic Linked Open Data (LLOD) [1] which model relations between resources and include rich metadata with standardized, non-proprietary technologies – a trend which promises to lead to improved multilingual NLP systems. However, how to effectively utilize these resources in practical applications is not self-evident, in particular for specialized technical domains. 
