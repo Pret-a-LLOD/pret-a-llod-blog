@@ -8,6 +8,7 @@ summary: Linked Linguistic Open Data's role in assessing health-related quality 
 ---
 body:
 
+![Quality of life] (.patient experience - small.png)
 Increasingly, multilingual language resources are available as Linguistic Linked Open Data (LLOD) [1] which model relations between resources and include rich metadata with standardized, non-proprietary technologies – a trend which promises to lead to improved multilingual NLP systems. However, how to effectively utilize these resources in practical applications is not self-evident, in particular for specialized technical domains. 
 
 One example of such a domain are posts from online health communities, i.e., web fora and similar systems focusing on health topics used by patients, caregivers and/or professionals in a wide range of languages. Online health communities are a relevant data source for a range of emerging application areas, such as public health monitoring or evidence generation for regulatory drug approval [2], which entail analysing patients’ experiences beyond clinical trials. A central aspect of these so-called patient-reported outcomes is health-related quality of life (HRQoL) [3].
